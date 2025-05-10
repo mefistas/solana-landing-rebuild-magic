@@ -1,6 +1,7 @@
 
 import React from 'react';
 import { Button } from '@/components/ui/button';
+import { Wallet } from 'lucide-react';
 
 const Hero = () => {
   return (
@@ -12,16 +13,10 @@ const Hero = () => {
         <p className="text-xl md:text-2xl mb-12 max-w-2xl mx-auto text-gray-300">
           The world's most performant blockchain with the tools you need to build quickly
         </p>
-        <div className="flex flex-wrap justify-center gap-4">
-          <Button size="lg" className="bg-solana-purple hover:bg-opacity-90 text-white px-8 py-6 text-lg">
-            <a href="https://solana.com/developers" target="_blank" rel="noopener noreferrer">
-              Start Building
-            </a>
-          </Button>
-          <Button variant="outline" size="lg" className="border-white hover:bg-white/10 text-white px-8 py-6 text-lg">
-            <a href="https://solana.com/ecosystem" target="_blank" rel="noopener noreferrer">
-              Explore Ecosystem
-            </a>
+        <div className="flex justify-center">
+          <Button size="lg" className="bg-solana-purple hover:bg-opacity-90 text-white px-8 py-6 text-lg flex items-center gap-2">
+            <Wallet className="w-5 h-5" />
+            Connect Wallet
           </Button>
         </div>
       </div>

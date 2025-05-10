@@ -76,7 +76,7 @@ const Community = () => {
                   Join Discord
                 </a>
               </Button>
-              <Button variant="outline" className="px-6 py-3 border-white hover:bg-white/10 text-white rounded-lg">
+              <Button className="px-6 py-3 bg-solana-purple hover:bg-opacity-90 text-white rounded-lg">
                 <a href="https://solana.com/ecosystem" target="_blank" rel="noopener noreferrer">
                   Explore ecosystem
                 </a>

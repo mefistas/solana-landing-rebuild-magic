@@ -1,4 +1,3 @@
-
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import { Menu, X, ChevronDown } from 'lucide-react';
@@ -39,10 +38,6 @@ const Navbar = () => {
         { label: 'Grants', href: 'https://solana.org' },
         { label: 'Events', href: 'https://solana.com/events' }
       ]
-    },
-    {
-      label: 'SVM',
-      href: 'https://svm.solana.com'
     },
     {
       label: 'About',

@@ -64,8 +64,8 @@ export default {
 					ring: 'hsl(var(--sidebar-ring))'
 				},
 				solana: {
-					purple: '#9b87f5',
-					'dark-purple': '#7E69AB',
+					purple: '#8E59FF', // Deeper purple that matches solana.com
+					'dark-purple': '#6E46D6', // Darker shade
 					green: '#14F195',
 					'soft-green': '#F2FCE2',
 					black: '#000000',

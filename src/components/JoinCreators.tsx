@@ -19,7 +19,7 @@ const JoinCreators = () => {
                 Start Building
               </a>
             </Button>
-            <Button size="lg" variant="outline" className="border-white hover:bg-white/10 text-white px-8 py-6 text-lg">
+            <Button size="lg" className="bg-solana-purple hover:bg-opacity-90 text-white px-8 py-6 text-lg">
               <a href="https://solana.com/news" target="_blank" rel="noopener noreferrer">
                 Read The Blog
               </a>
