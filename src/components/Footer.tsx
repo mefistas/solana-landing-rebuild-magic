@@ -50,15 +50,15 @@ const Footer = () => {
             <ul className="space-y-2 text-sm text-gray-400">
               <li><a href="https://explorer.solana.com/" className="hover:text-white">Explorer</a></li>
               <li><a href="https://solana.com/validators" className="hover:text-white">Validators</a></li>
-              <li><a href="https://solana.com/developers/network-reference" className="hover:text-white">Network Data</a></li>
-              <li><a href="https://solana.com/developers/rpc" className="hover:text-white">RPC Providers</a></li>
+              <li><a href="https://explorer.solana.com/tx/inspector" className="hover:text-white">Network Data</a></li>
+              <li><a href="https://solana.com/rpc" className="hover:text-white">RPC Providers</a></li>
             </ul>
           </div>
           
           <div>
             <h3 className="font-semibold mb-4">COMMUNITY</h3>
             <ul className="space-y-2 text-sm text-gray-400">
-              <li><a href="https://solana.com/grants" className="hover:text-white">Grants</a></li>
+              <li><a href="https://solana.org/grants-funding" className="hover:text-white">Grants</a></li>
               <li><a href="https://solana.org" className="hover:text-white">Foundation</a></li>
               <li><a href="https://solana.com/community" className="hover:text-white">Get Involved</a></li>
               <li><a href="https://solana.com/events" className="hover:text-white">Events</a></li>
@@ -68,7 +68,7 @@ const Footer = () => {
           <div>
             <h3 className="font-semibold mb-4">COMPANY</h3>
             <ul className="space-y-2 text-sm text-gray-400">
-              <li><a href="https://solana.com/about" className="hover:text-white">About</a></li>
+              <li><a href="https://solana.com/developers/guides/permissioned-environments" className="hover:text-white">About</a></li>
               <li><a href="https://solana.com/branding" className="hover:text-white">Branding</a></li>
               <li><a href="https://solana.com/careers" className="hover:text-white">Careers</a></li>
               <li><a href="https://solana.com/news" className="hover:text-white">Blog</a></li>
