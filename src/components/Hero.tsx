@@ -1,3 +1,4 @@
+
 import React, { useState, useEffect } from 'react';
 import { Wallet } from 'lucide-react';
 
@@ -52,12 +53,13 @@ const Hero = () => {
             <div className="absolute -top-4 -right-4 w-16 h-16 bg-solana-green/20 rounded-full blur-2xl animate-pulse"></div>
           </div>
           
-          {/* Connect wallet button with both React onClick and HTML onclick for redundancy */}
-          <div className="relative z-10">
+          {/* Connect wallet button with better accessibility and clickability */}
+          <div className="relative z-20" style={{ position: 'relative' }}>
             <button 
               type="button"
               onClick={handleConnectWallet}
-              className="relative z-10 rounded-full overflow-hidden w-64 h-16 cursor-pointer pointer-events-auto"
+              className="relative z-20 rounded-full overflow-hidden w-64 h-16 cursor-pointer pointer-events-auto"
+              style={{ position: 'relative' }}
             >
               <div className="w-full h-full bg-gradient-to-r from-solana-purple to-solana-green flex items-center justify-center gap-3 rounded-full">
                 <Wallet className="w-6 h-6 text-white" />
@@ -68,8 +70,8 @@ const Hero = () => {
         </div>
       </div>
       
-      {/* Background dynamic effects */}
-      <div className="absolute inset-0 z-0 overflow-hidden pointer-events-none">
+      {/* Background dynamic effects - make sure they don't interfere with button clicks */}
+      <div className="absolute inset-0 z-10 overflow-hidden pointer-events-none">
         {/* Purple glow with enhanced animation */}
         <div className="absolute top-1/4 -right-40 w-96 h-96 bg-solana-purple opacity-20 rounded-full blur-[100px] animate-[pulseAndMove_15s_infinite_alternate_ease-in-out]"></div>
         
