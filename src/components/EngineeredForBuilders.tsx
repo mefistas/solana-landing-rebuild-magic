@@ -1,6 +1,5 @@
 
 import React from 'react';
-import { Button } from '@/components/ui/button';
 
 const EngineeredForBuilders = () => {
   return (
@@ -31,11 +30,12 @@ const EngineeredForBuilders = () => {
           Discover the Abstract Portal - your gateway to onchain discovery.
         </p>
         
-        <button
+        {/* Fully rounded button with green glow effect - no square frames */}
+        <button 
           onClick={() => window.open("https://docs.abs.xyz/overview", "_blank")}
-          className="px-8 py-3 text-white font-medium rounded-full bg-gradient-to-r from-green-500 to-emerald-600 hover:opacity-90 transition-opacity"
+          className="rounded-full px-8 py-3 bg-gradient-to-r from-green-500 to-emerald-600 text-white font-medium transition duration-200 hover:opacity-90"
         >
-          Explore ecosystem
+          Dev Docs
         </button>
       </div>
       

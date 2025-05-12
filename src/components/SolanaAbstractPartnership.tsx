@@ -7,9 +7,9 @@ const SolanaAbstractPartnership = () => {
       {/* Background gradient effect */}
       <div className="absolute inset-0 bg-gradient-to-b from-black via-purple-900/20 to-black"></div>
       
-      {/* Floating SVG elements - NO ANIMATION for these background SVGs */}
+      {/* Floating SVG elements */}
       <div className="absolute inset-0 z-0 overflow-hidden">
-        {/* Purple cube SVGs - left side - STATIC, no animation */}
+        {/* Purple cube SVGs - left side */}
         <div className="absolute left-[5%] top-[15%]">
           <svg width="60" height="60" viewBox="0 0 60 60" fill="none" xmlns="http://www.w3.org/2000/svg">
             <rect width="50" height="50" rx="4" fill="#8E59FF" fillOpacity="0.7" />
@@ -26,7 +26,7 @@ const SolanaAbstractPartnership = () => {
           </svg>
         </div>
         
-        {/* Green cube SVGs - right side - STATIC, no animation */}
+        {/* Green cube SVGs - right side */}
         <div className="absolute right-[5%] top-[20%]">
           <svg width="60" height="60" viewBox="0 0 60 60" fill="none" xmlns="http://www.w3.org/2000/svg">
             <rect width="50" height="50" rx="4" fill="#14F195" fillOpacity="0.7" />
@@ -43,7 +43,7 @@ const SolanaAbstractPartnership = () => {
           </svg>
         </div>
 
-        {/* Chrome figurine SVGs - STATIC, no animation */}
+        {/* Chrome figurine SVGs */}
         <div className="absolute left-[10%] bottom-[10%] opacity-70">
           <svg width="120" height="180" viewBox="0 0 120 180" fill="none" xmlns="http://www.w3.org/2000/svg">
             <path d="M60 20 L80 40 L70 120 L60 140 L50 120 L40 40 Z" fill="url(#chrome-gradient-1)" />
@@ -74,7 +74,7 @@ const SolanaAbstractPartnership = () => {
           {/* Left text box */}
           <div className="p-6 bg-gradient-to-br from-gray-900 to-gray-800/80 rounded-xl border border-purple-500/20 backdrop-blur-sm">
             <div className="flex items-start mb-4">
-              <svg className="w-8 h-8 mr-3 text-solana-purple animated-svg" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <svg className="w-8 h-8 mr-3 text-solana-purple" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <rect width="20" height="20" rx="4" fill="#8E59FF" />
               </svg>
               <h3 className="text-2xl font-bold">Add a heading</h3>
@@ -85,13 +85,13 @@ const SolanaAbstractPartnership = () => {
             </p>
             <ul className="space-y-2">
               <li className="flex items-center">
-                <svg className="w-5 h-5 mr-2 text-solana-purple animated-svg" viewBox="0 0 20 20" fill="#8E59FF">
+                <svg className="w-5 h-5 mr-2 text-solana-purple" viewBox="0 0 20 20" fill="#8E59FF">
                   <circle cx="10" cy="10" r="8" />
                 </svg>
                 <span>Benefit or feature point</span>
               </li>
               <li className="flex items-center">
-                <svg className="w-5 h-5 mr-2 text-solana-purple animated-svg" viewBox="0 0 20 20" fill="#8E59FF">
+                <svg className="w-5 h-5 mr-2 text-solana-purple" viewBox="0 0 20 20" fill="#8E59FF">
                   <circle cx="10" cy="10" r="8" />
                 </svg>
                 <span>Another integration detail</span>
@@ -117,7 +117,7 @@ const SolanaAbstractPartnership = () => {
           {/* Right text box */}
           <div className="p-6 bg-gradient-to-br from-gray-900 to-gray-800/80 rounded-xl border border-green-500/20 backdrop-blur-sm">
             <div className="flex items-start mb-4">
-              <svg className="w-8 h-8 mr-3 text-solana-green animated-svg" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <svg className="w-8 h-8 mr-3 text-solana-green" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <rect width="20" height="20" rx="4" fill="#14F195" />
               </svg>
               <h3 className="text-2xl font-bold">Add a heading</h3>
@@ -128,13 +128,13 @@ const SolanaAbstractPartnership = () => {
             </p>
             <ul className="space-y-2">
               <li className="flex items-center">
-                <svg className="w-5 h-5 mr-2 text-solana-green animated-svg" viewBox="0 0 20 20" fill="#14F195">
+                <svg className="w-5 h-5 mr-2 text-solana-green" viewBox="0 0 20 20" fill="#14F195">
                   <circle cx="10" cy="10" r="8" />
                 </svg>
                 <span>Key highlight or statistic</span>
               </li>
               <li className="flex items-center">
-                <svg className="w-5 h-5 mr-2 text-solana-green animated-svg" viewBox="0 0 20 20" fill="#14F195">
+                <svg className="w-5 h-5 mr-2 text-solana-green" viewBox="0 0 20 20" fill="#14F195">
                   <circle cx="10" cy="10" r="8" />
                 </svg>
                 <span>Important feature or benefit</span>
@@ -144,7 +144,7 @@ const SolanaAbstractPartnership = () => {
         </div>
       </div>
       
-      {/* Animation styles - apply animation ONLY to SVGs inside text boxes */}
+      {/* Animation styles - add animation to SVGs in text boxes */}
       <style>
         {`
           @keyframes float {
@@ -153,7 +153,7 @@ const SolanaAbstractPartnership = () => {
             100% { transform: translateY(0px); }
           }
           
-          .animated-svg {
+          .p-6 svg {
             animation: float 4s ease-in-out infinite;
           }
         `}
