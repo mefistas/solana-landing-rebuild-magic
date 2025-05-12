@@ -191,19 +191,6 @@ const Navbar = () => {
                 ))}
               </NavigationMenuList>
             </NavigationMenu>
-            
-            {/* Connect Wallet Button - fixed to be properly rounded without square frames */}
-            <div className="ml-4">
-              <div className="relative overflow-hidden group">
-                <div className="absolute inset-0 bg-gradient-to-r from-solana-purple to-solana-green rounded-full blur-md group-hover:blur-lg transition-all duration-300"></div>
-                <button 
-                  className="relative py-2 px-6 bg-black text-white font-medium text-sm rounded-full border border-solana-purple/30 z-10 transition-all duration-300 group-hover:shadow-lg"
-                  onClick={() => window.openModal && window.openModal()}
-                >
-                  Connect Wallet
-                </button>
-              </div>
-            </div>
           </div>
 
           {/* Mobile menu button */}
