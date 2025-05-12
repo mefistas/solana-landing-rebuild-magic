@@ -61,7 +61,7 @@ const Community = () => {
               rel="noopener noreferrer"
               className="text-transparent bg-clip-text bg-gradient-to-r from-solana-green to-emerald-400 flex items-center gap-2 font-medium hover:underline"
             >
-              Apply Now <ExternalLink className="h-4 w-4 text-solana-green" />
+              Learn more <ExternalLink className="h-4 w-4 text-solana-green" />
             </a>
           </div>
           
@@ -83,11 +83,10 @@ const Community = () => {
         
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center mt-24">
           <div>
-            <h2 className="text-4xl md:text-5xl font-bold mb-6">Join a thriving community</h2>
+            <h2 className="text-4xl md:text-5xl font-bold mb-6">Empowering Solana's
+Content Creators</h2>
             <p className="text-xl mb-8 text-gray-300 leading-relaxed">
-              Join the thousands of developers, artists, and creators already building on Solana.
-              Whether you're looking to connect with other builders or find the newest dapps,
-              start with Solana community.
+              Solana Collective provides opportunities and initiatives to empower and uplift Content Creators and Projects in the Solana Ecosystem.
             </p>
             <div className="flex flex-wrap gap-4">
               <div className="relative overflow-hidden group inline-block">
