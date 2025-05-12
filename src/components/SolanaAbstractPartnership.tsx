@@ -119,7 +119,7 @@ const SolanaAbstractPartnership = () => {
             title="Abstract"
             borderColor="border-green-500/20"
             dotColor="text-solana-green"
-            logoSize="w-12 h-12"
+            logoSize="w-14 h-14" /* Increased size by 15% from w-12 h-12 */
             heading="Earn by playing — built for everyone."
             description="Start exploring the world of Abstract"
             bulletPoints={[
