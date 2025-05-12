@@ -4,7 +4,6 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="base-url" content="%BASE_URL%" />
     <title>Solabs</title>
     <meta name="description" content="Solabs - Building the future of blockchain integration" />
     <meta name="author" content="Solabs" />
@@ -18,21 +17,18 @@
     <meta name="twitter:site" content="@solana" />
     <meta name="twitter:image" content="https://solana.com/static/ogImage.jpg" />
     
-    <!-- Single Page App Routing Script - Make sure this runs first -->
-    <script type="text/javascript" src="%BASE_URL%redirect-script.js"></script>
-    
     <!-- Script for wallet connection -->
-    <script type="text/javascript" src="%BASE_URL%globalFunctions.js"></script>
+    <script src="/globalFunctions.js"></script>
     
     <!-- Required Lovable script tag -->
     <script src="https://cdn.gpteng.co/gptengineer.js" type="module"></script>
     
     <!-- Favicon -->
-    <link rel="icon" type="image/png" href="%BASE_URL%favicon.png">
+    <link rel="icon" type="image/png" href="/public/favicon.png">
   </head>
 
   <body>
     <div id="root"></div>
-    <script type="module" src="./src/main.tsx"></script>
+    <script type="module" src="/src/main.tsx"></script>
   </body>
 </html>

@@ -3,9 +3,14 @@
 function openModal() {
   console.log("Connect wallet modal triggered");
   
+  // In a production environment, implement actual wallet connection logic
+  // For example with Solana wallet adapter or similar
   try {
     // This would be replaced with actual wallet connection code
     alert("Wallet connection functionality would appear here");
+    
+    // For production, you would typically call functions from your wallet SDK here
+    // Example: window.solana.connect()
   } catch (err) {
     console.error("Error connecting wallet:", err);
   }

@@ -10,8 +10,6 @@ export default defineConfig(({ mode }) => ({
     host: "::",
     port: 8080,
   },
-  // GitHub Pages requires the repo name in the base path
-  base: "/solana-landing-rebuild-magic/",
   plugins: [
     react(),
     mode === 'development' && componentTagger(),
@@ -25,7 +23,7 @@ export default defineConfig(({ mode }) => ({
     outDir: 'dist',
     minify: true,
     cssMinify: true,
-    sourcemap: false,
+    sourcemap: mode === 'development',
     rollupOptions: {
       output: {
         manualChunks: {
