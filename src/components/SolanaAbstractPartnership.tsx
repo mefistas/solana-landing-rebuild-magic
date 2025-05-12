@@ -46,7 +46,7 @@ const SolanaAbstractPartnership = () => {
         </div>
         <div className="absolute right-[20%] bottom-[15%]">
           <img 
-            src="/src/components/17.svg" 
+            src="https://raw.githubusercontent.com/mefistas/solana-landing-rebuild-magic/refs/heads/main/src/components/17.svg" 
             alt="Green Element" 
             className="w-[40px] h-[40px]" 
             style={{ background: 'transparent' }}
