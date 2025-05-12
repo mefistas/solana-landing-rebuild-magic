@@ -3,7 +3,13 @@ import { createRoot } from 'react-dom/client'
 import App from './App.tsx'
 import './index.css'
 
-// Console log to help debug if there are any issues
+// Additional console logs to help debug if there are any issues
 console.log('Application starting...');
+console.log('DOM element "root":', document.getElementById("root"));
 
-createRoot(document.getElementById("root")!).render(<App />);
+try {
+  createRoot(document.getElementById("root")!).render(<App />);
+  console.log('App successfully rendered');
+} catch (error) {
+  console.error('Error rendering the App:', error);
+}
