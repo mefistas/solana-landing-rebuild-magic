@@ -84,15 +84,15 @@ const SolanaAbstractPartnership = () => {
 
       <div className="container mx-auto px-4 relative z-10">
         <div className="grid grid-cols-1 lg:grid-cols-3 gap-8 items-center">
-          {/* Left box - Abstract styling/logo but with Solana text content */}
+          {/* Left box - Abstract styling/logo but with Solana content */}
           <PartnershipBox 
             logoSrc="https://raw.githubusercontent.com/mefistas/solana-landing-rebuild-magic/refs/heads/main/src/components/1.svg"
-            title="Abstract"
+            title="Solana"
             borderColor="border-purple-500/20"
             dotColor="text-solana-purple"
             logoSize="w-8 h-8"
             heading="Start exploring the chain — swap, earn, and unlock."
-            description="Start exploring the world of Abstract"
+            description="Start exploring the world of Solana"
             bulletPoints={[
               "The more you interact with Solana, the more Solana rewards you.",
               "Make every transaction count — your activity fuels your rewards."
@@ -113,15 +113,15 @@ const SolanaAbstractPartnership = () => {
             </button>
           </div>
           
-          {/* Right box - Solana styling/logo but with Abstract text content */}
+          {/* Right box - Solana styling/logo but with Abstract content */}
           <PartnershipBox 
             logoSrc="https://raw.githubusercontent.com/mefistas/solana-landing-rebuild-magic/refs/heads/main/src/components/3.svg"
-            title="Solana"
+            title="Abstract"
             borderColor="border-green-500/20"
             dotColor="text-solana-green"
             logoSize="w-12 h-12"
             heading="Earn by playing — built for everyone."
-            description="Start exploring the world of Solana"
+            description="Start exploring the world of Abstract"
             bulletPoints={[
               "The more you play, the more you earn in this airdrop.",
               "Top scorers unlock exclusive rewards and bonus opportunities."
