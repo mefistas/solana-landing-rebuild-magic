@@ -1,20 +1,19 @@
 
 import React from 'react';
-import { Button } from '@/components/ui/button';
 
 const EngineeredForBuilders = () => {
   return (
     <section className="relative py-24 bg-black text-white overflow-hidden">
-      {/* Background effects */}
+      {/* Background effects - enhanced green light fade */}
       <div className="absolute inset-0 z-0 overflow-hidden">
-        <div className="absolute w-full h-80 bg-gradient-to-r from-solana-green/20 to-solana-purple/20 opacity-20 blur-[100px]"
+        <div className="absolute w-full h-96 bg-gradient-to-r from-emerald-500/20 to-green-400/10 opacity-20 blur-[120px]"
           style={{
             animation: 'pulseSlowly 10s infinite alternate ease-in-out',
             top: '10%',
           }}
         ></div>
         
-        <div className="absolute w-96 h-96 bg-solana-purple opacity-10 rounded-full blur-[130px]"
+        <div className="absolute w-96 h-96 bg-emerald-400 opacity-5 rounded-full blur-[130px]"
           style={{
             animation: 'moveGlow 30s infinite alternate-reverse ease-in-out',
             right: '15%',
@@ -31,24 +30,23 @@ const EngineeredForBuilders = () => {
           Discover the Abstract Portal - your gateway to onchain discovery.
         </p>
         
-        {/* Neon button with glow effect - ensuring proper rounded styling */}
+        {/* Fully rounded button with green glow effect - no square frames */}
         <div className="inline-block">
           <a 
             href="https://docs.abs.xyz/overview"
             target="_blank" 
             rel="noopener noreferrer"
+            className="relative inline-flex group"
           >
-            <div className="relative overflow-hidden group">
-              <div className="absolute inset-0 bg-gradient-to-r from-solana-green to-solana-purple rounded-full blur-md group-hover:blur-xl transition-all duration-300"></div>
-              <button className="relative bg-black hover:bg-black/80 text-white rounded-full px-8 py-3 font-medium z-10 transition-all duration-300 group-hover:shadow-lg">
-                Dev Docs
-              </button>
-            </div>
+            <div className="absolute -inset-0.5 bg-gradient-to-r from-green-500 to-emerald-600 rounded-full opacity-70 blur-sm group-hover:opacity-100 transition duration-300 group-hover:duration-200"></div>
+            <button className="relative flex items-center justify-center px-8 py-3 bg-black text-white font-medium rounded-full leading-none z-10 transition-all duration-200 group-hover:bg-black/90">
+              Dev Docs
+            </button>
           </a>
         </div>
       </div>
       
-      {/* Add keyframes for pulse animation */}
+      {/* Add keyframes for animations */}
       <style>
         {`
           @keyframes pulseSlowly {
@@ -57,9 +55,9 @@ const EngineeredForBuilders = () => {
           }
           
           @keyframes moveGlow {
-            0% { transform: translateX(-5%) translateY(5%); opacity: 0.1; }
-            50% { transform: translateX(5%) translateY(-5%); opacity: 0.2; }
-            100% { transform: translateX(-5%) translateY(5%); opacity: 0.1; }
+            0% { transform: translateX(-5%) translateY(5%); opacity: 0.05; }
+            50% { transform: translateX(5%) translateY(-5%); opacity: 0.1; }
+            100% { transform: translateX(-5%) translateY(5%); opacity: 0.05; }
           }
         `}
       </style>
