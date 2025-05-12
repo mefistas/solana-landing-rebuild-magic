@@ -7,3 +7,6 @@ function openModal() {
 
 // Make the function available globally
 window.openModal = openModal;
+
+// Add an event to confirm the script is loaded
+console.log("Global functions script loaded successfully");

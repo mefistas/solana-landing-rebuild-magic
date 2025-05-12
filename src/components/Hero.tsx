@@ -17,6 +17,16 @@ const Hero = () => {
     return () => clearInterval(interval);
   }, []);
 
+  // Let's add a console log to check if the button click is being registered
+  const handleConnectWallet = () => {
+    console.log("Hero component: Connect wallet button clicked");
+    if (typeof window.openModal === 'function') {
+      window.openModal();
+    } else {
+      console.error("openModal function not found on window object");
+    }
+  };
+
   return (
     <div className="relative min-h-screen flex items-center justify-center bg-black text-white">
       <div className="container mx-auto px-4 py-40 text-center">
@@ -42,10 +52,10 @@ const Hero = () => {
             <div className="absolute -top-4 -right-4 w-16 h-16 bg-solana-green/20 rounded-full blur-2xl animate-pulse"></div>
           </div>
           
-          {/* Updated Connect wallet button with onclick to match the image */}
+          {/* Connect wallet button with improved event handling */}
           <button 
-            onClick={() => window.openModal()}
-            className="rounded-full overflow-hidden w-64 h-16"
+            onClick={handleConnectWallet}
+            className="rounded-full overflow-hidden w-64 h-16 cursor-pointer"
           >
             <div className="w-full h-full bg-gradient-to-r from-solana-purple to-solana-green flex items-center justify-center gap-3 rounded-full">
               <Wallet className="w-6 h-6 text-white" />

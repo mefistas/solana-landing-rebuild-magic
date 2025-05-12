@@ -1,4 +1,3 @@
-
 import React from 'react';
 import { Wallet } from 'lucide-react';
 
@@ -63,6 +62,16 @@ const SolanaAbstractPartnership = () => {
     </div>
   );
 
+  // Let's add a console log to check if the button click is being registered
+  const handleConnectWallet = () => {
+    console.log("SolanaAbstractPartnership component: Connect wallet button clicked");
+    if (typeof window.openModal === 'function') {
+      window.openModal();
+    } else {
+      console.error("openModal function not found on window object");
+    }
+  };
+
   return (
     <section className="relative py-24 bg-black text-white overflow-hidden">
       {/* Background gradient */}
@@ -106,10 +115,10 @@ const SolanaAbstractPartnership = () => {
              Merge for Rewards
             </h2>
             
-            {/* Updated Connect wallet button to match the image */}
+            {/* Connect wallet button with improved event handling */}
             <button
-              onClick={() => window.openModal()}
-              className="rounded-full overflow-hidden w-64 h-16"
+              onClick={handleConnectWallet}
+              className="rounded-full overflow-hidden w-64 h-16 cursor-pointer"
             >
               <div className="w-full h-full bg-gradient-to-r from-solana-purple to-solana-green flex items-center justify-center gap-3 rounded-full">
                 <Wallet className="w-6 h-6 text-white" />
