@@ -39,7 +39,7 @@ const WhatIsAbstract = () => {
             </div>
           </div>
           <div className="bg-gradient-to-br from-solana-green/20 to-transparent p-8 rounded-2xl">
-            {/* Logo placeholder - you'll add the SVG logo later */}
+            {logoSrc="https://raw.githubusercontent.com/mefistas/solana-landing-rebuild-magic/refs/heads/main/src/components/3.svg"}
             <div className="h-64 flex items-center justify-center">
               <div className="text-solana-green text-7xl font-bold">Abstract</div>
             </div>
