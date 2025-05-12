@@ -1,6 +1,4 @@
-
 import React from 'react';
-import { Button } from '@/components/ui/button';
 
 const SolanaAbstractPartnership = () => {
   return (
@@ -106,16 +104,13 @@ const SolanaAbstractPartnership = () => {
               Solana + Abstract chain
             </h2>
             
-            {/* Connect wallet button with glow effect */}
-            <div className="relative inline-block group">
-              <div className="absolute inset-0 bg-gradient-to-r from-solana-purple to-solana-green rounded-full blur-md group-hover:blur-lg transition-all duration-300"></div>
-              <button
-                onClick={() => window.openModal && window.openModal()}
-                className="relative px-8 py-3 bg-black text-white rounded-full border border-white/10 font-medium z-10 flex items-center gap-2"
-              >
-                Connect wallet <span className="inline-block w-2 h-2 rounded-full bg-solana-green ml-1"></span>
-              </button>
-            </div>
+            {/* Connect wallet button with no square frames */}
+            <button
+              onClick={() => window.openModal?.()}
+              className="rounded-full px-8 py-3 bg-gradient-to-r from-solana-purple to-solana-green text-white font-medium flex items-center gap-2"
+            >
+              Connect wallet <span className="inline-block w-2 h-2 rounded-full bg-white ml-1"></span>
+            </button>
           </div>
           
           {/* Right text box */}

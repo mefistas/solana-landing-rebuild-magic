@@ -1,4 +1,3 @@
-
 import React, { useState, useEffect } from 'react';
 import { Wallet } from 'lucide-react';
 
@@ -42,13 +41,12 @@ const Hero = () => {
             <div className="absolute -top-4 -right-4 w-16 h-16 bg-solana-green/20 rounded-full blur-2xl animate-pulse"></div>
           </div>
           
-          {/* Enhanced fully rounded connect wallet button with fixed wallet icon */}
+          {/* Connect wallet button without any square frames */}
           <button 
-            onClick={() => window.openModal && window.openModal()}
-            className="relative overflow-hidden group rounded-full"
+            onClick={() => window.openModal?.()}
+            className="rounded-full overflow-hidden"
           >
-            <div className="absolute inset-0 bg-gradient-to-r from-solana-purple to-solana-green rounded-full blur-md group-hover:blur-xl transition-all duration-300"></div>
-            <div className="bg-gradient-to-r from-solana-purple via-purple-700 to-solana-green relative z-10 px-10 py-5 text-lg flex items-center gap-3 rounded-full border border-white/20 shadow-lg shadow-purple-500/30 group-hover:shadow-solana-green/30 transition-all duration-300">
+            <div className="bg-gradient-to-r from-solana-purple via-purple-700 to-solana-green px-10 py-5 text-lg flex items-center gap-3 rounded-full border border-white/20 shadow-lg">
               <Wallet className="w-6 h-6" style={{ transform: 'none', transition: 'none' }} />
               <span className="text-white font-semibold">Connect Wallet</span>
             </div>
@@ -56,7 +54,7 @@ const Hero = () => {
         </div>
       </div>
       
-      {/* Enhanced dynamic background effects with more animated elements */}
+      {/* Enhanced dynamic background effects */}
       <div className="absolute inset-0 z-0 overflow-hidden">
         {/* Purple glow with enhanced animation */}
         <div className="absolute top-1/4 -right-40 w-96 h-96 bg-solana-purple opacity-20 rounded-full blur-[100px] animate-[pulseAndMove_15s_infinite_alternate_ease-in-out]"></div>

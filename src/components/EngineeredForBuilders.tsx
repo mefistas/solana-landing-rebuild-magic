@@ -36,10 +36,10 @@ const EngineeredForBuilders = () => {
             href="https://docs.abs.xyz/overview"
             target="_blank" 
             rel="noopener noreferrer"
-            className="relative inline-flex group"
+            className="relative rounded-full inline-flex group"
           >
             <div className="absolute -inset-0.5 bg-gradient-to-r from-green-500 to-emerald-600 rounded-full opacity-70 blur-sm group-hover:opacity-100 transition duration-300 group-hover:duration-200"></div>
-            <button className="relative flex items-center justify-center px-8 py-3 bg-black text-white font-medium rounded-full leading-none z-10 transition-all duration-200 group-hover:bg-black/90">
+            <button className="relative rounded-full flex items-center justify-center px-8 py-3 bg-black text-white font-medium z-10 transition-all duration-200 group-hover:bg-black/90">
               Dev Docs
             </button>
           </a>
