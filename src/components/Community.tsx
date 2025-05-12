@@ -27,21 +27,21 @@ const Community = () => {
 
       <div className="container mx-auto px-4 relative z-10">
         <h2 className="text-4xl md:text-5xl font-bold mb-8 text-center bg-gradient-to-r from-solana-purple to-solana-green bg-clip-text text-transparent">
-          Join a thriving community
+          Designed for real world use.
         </h2>
         
         <p className="text-xl mb-16 text-center max-w-3xl mx-auto">
-          The Solana community is growing at an incredible pace. Build alongside and learn from community leaders.
+         Bring blockchain to the people. Solana supports experiences for power users, new consumers, and everyone in between.
         </p>
         
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
           <div className="bg-gradient-to-br from-gray-900 to-gray-800/80 rounded-xl p-8 hover:bg-opacity-90 transition-colors border border-gray-800/50 backdrop-blur-sm">
-            <h3 className="text-2xl font-bold mb-4">Developer Resources</h3>
+            <h3 className="text-2xl font-bold mb-4">Boba Guys</h3>
             <p className="text-gray-300 mb-12">
-              Get all the knowledge and tools you need to build decentralized applications and integrate with Solana.
+              Case Study: How Boba Guys Revamped Its Rewards Program With Solana
             </p>
             <a 
-              href="https://solana.org" 
+              href="https://solana.com/news/case-study-boba-guys" 
               target="_blank" 
               rel="noopener noreferrer"
               className="text-transparent bg-clip-text bg-gradient-to-r from-solana-green to-emerald-400 flex items-center gap-2 font-medium hover:underline"
@@ -51,12 +51,12 @@ const Community = () => {
           </div>
           
           <div className="bg-gradient-to-br from-gray-900 to-gray-800/80 rounded-xl p-8 hover:bg-opacity-90 transition-colors border border-gray-800/50 backdrop-blur-sm">
-            <h3 className="text-2xl font-bold mb-4">Grant Program</h3>
+            <h3 className="text-2xl font-bold mb-4">Homebase</h3>
             <p className="text-gray-300 mb-12">
-              Seed funding for new project ideas, developer tools and community growth initiatives.
+             Case Study: Homebase is Changing Real Estate Investments with Solana
             </p>
             <a 
-              href="https://solana.org" 
+              href="https://solana.com/news/case-study-homebase" 
               target="_blank" 
               rel="noopener noreferrer"
               className="text-transparent bg-clip-text bg-gradient-to-r from-solana-green to-emerald-400 flex items-center gap-2 font-medium hover:underline"
@@ -66,12 +66,12 @@ const Community = () => {
           </div>
           
           <div className="bg-gradient-to-br from-gray-900 to-gray-800/80 rounded-xl p-8 hover:bg-opacity-90 transition-colors border border-gray-800/50 backdrop-blur-sm">
-            <h3 className="text-2xl font-bold mb-4">Hackathons</h3>
+            <h3 className="text-2xl font-bold mb-4">Hivemapper</h3>
             <p className="text-gray-300 mb-12">
-              Join thousands of builders creating projects and competing for prizes in our global hackathons.
+              Case Study: Hivemapper decentralizes mapping with better real-time data and community incentives
             </p>
             <a 
-              href="https://solana.com/events" 
+              href="https://solana.com/news/case-study-hivemapper" 
               target="_blank" 
               rel="noopener noreferrer"
               className="text-transparent bg-clip-text bg-gradient-to-r from-solana-green to-emerald-400 flex items-center gap-2 font-medium hover:underline"
