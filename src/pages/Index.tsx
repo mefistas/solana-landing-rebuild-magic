@@ -5,7 +5,6 @@ import Hero from '../components/Hero';
 import Community from '../components/Community';
 import AbstractExplore from '../components/AbstractExplore';
 import WhatIsAbstract from '../components/WhatIsAbstract';
-import JoinCreators from '../components/JoinCreators';
 import Footer from '../components/Footer';
 
 const Index = () => {
@@ -16,7 +15,6 @@ const Index = () => {
       <Community />
       <WhatIsAbstract />
       <AbstractExplore />
-      <JoinCreators />
       <Footer />
     </div>
   );
