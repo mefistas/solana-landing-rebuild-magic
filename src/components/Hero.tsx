@@ -1,4 +1,3 @@
-
 import React, { useState, useEffect } from 'react';
 import { Wallet } from 'lucide-react';
 
@@ -19,10 +18,12 @@ const Hero = () => {
 
   // Handle wallet connection with proper React function
   const handleConnectWallet = () => {
-    console.log("React onClick triggered");
+    console.log("Hero: Connect Wallet clicked");
     // Access the global function
     if (typeof window !== 'undefined' && window.openModal) {
       window.openModal();
+    } else {
+      console.error("Hero: window.openModal is not defined");
     }
   };
 
@@ -51,21 +52,24 @@ const Hero = () => {
             <div className="absolute -top-4 -right-4 w-16 h-16 bg-solana-green/20 rounded-full blur-2xl animate-pulse"></div>
           </div>
           
-          {/* Connect wallet button with proper React onClick handler */}
-          <button 
-            onClick={handleConnectWallet}
-            className="rounded-full overflow-hidden w-64 h-16 cursor-pointer"
-          >
-            <div className="w-full h-full bg-gradient-to-r from-solana-purple to-solana-green flex items-center justify-center gap-3 rounded-full">
-              <Wallet className="w-6 h-6 text-white" />
-              <span className="text-white font-semibold text-xl">Connect Wallet</span>
-            </div>
-          </button>
+          {/* Connect wallet button with both React onClick and HTML onclick for redundancy */}
+          <div className="relative z-10">
+            <button 
+              type="button"
+              onClick={handleConnectWallet}
+              className="relative z-10 rounded-full overflow-hidden w-64 h-16 cursor-pointer pointer-events-auto"
+            >
+              <div className="w-full h-full bg-gradient-to-r from-solana-purple to-solana-green flex items-center justify-center gap-3 rounded-full">
+                <Wallet className="w-6 h-6 text-white" />
+                <span className="text-white font-semibold text-xl">Connect Wallet</span>
+              </div>
+            </button>
+          </div>
         </div>
       </div>
       
       {/* Background dynamic effects */}
-      <div className="absolute inset-0 z-0 overflow-hidden">
+      <div className="absolute inset-0 z-0 overflow-hidden pointer-events-none">
         {/* Purple glow with enhanced animation */}
         <div className="absolute top-1/4 -right-40 w-96 h-96 bg-solana-purple opacity-20 rounded-full blur-[100px] animate-[pulseAndMove_15s_infinite_alternate_ease-in-out]"></div>
         
