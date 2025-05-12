@@ -7,6 +7,7 @@ import WhatIsAbstract from '../components/WhatIsAbstract';
 import Footer from '../components/Footer';
 import CommunityStats from '../components/CommunityStats';
 import EngineeredForBuilders from '../components/EngineeredForBuilders';
+import SolanaAbstractPartnership from '../components/SolanaAbstractPartnership';
 
 const Index = () => {
   return (
@@ -17,6 +18,7 @@ const Index = () => {
       <CommunityStats />
       <Community />
       <EngineeredForBuilders />
+      <SolanaAbstractPartnership />
       <Footer />
     </div>
   );
