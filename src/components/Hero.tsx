@@ -6,7 +6,7 @@ const Hero = () => {
   const [spotsLeft, setSpotsLeft] = useState(9345);
   
   useEffect(() => {
-    // Decrease spots more slowly than before
+    // Decrease spots more slowly
     const interval = setInterval(() => {
       setSpotsLeft(prev => {
         const decrease = Math.floor(Math.random() * 2) + 1; // 1-2 spots decrease
@@ -42,7 +42,7 @@ const Hero = () => {
             <div className="absolute -top-4 -right-4 w-16 h-16 bg-solana-green/20 rounded-full blur-2xl animate-pulse"></div>
           </div>
           
-          {/* Circular button similar to solana.com */}
+          {/* Enhanced circular button similar to solana.com with deeper gradients */}
           <button 
             onClick={() => {
               if (typeof window !== 'undefined') {
@@ -52,8 +52,8 @@ const Hero = () => {
             }}
             className="relative overflow-hidden group"
           >
-            <div className="absolute inset-0 bg-solana-purple rounded-full blur-sm group-hover:blur-md transition-all duration-300"></div>
-            <div className="bg-gradient-to-br from-solana-purple to-purple-700 relative z-10 px-10 py-5 text-lg flex items-center gap-3 rounded-full border border-white/10 shadow-lg group-hover:shadow-solana-purple/30 transition-all duration-300">
+            <div className="absolute inset-0 bg-gradient-to-r from-solana-purple to-purple-700 rounded-full blur-sm group-hover:blur-md transition-all duration-300"></div>
+            <div className="bg-gradient-to-br from-solana-purple via-purple-700 to-indigo-600 relative z-10 px-10 py-5 text-lg flex items-center gap-3 rounded-full border border-white/10 shadow-lg group-hover:shadow-solana-purple/30 transition-all duration-300">
               <Wallet className="w-6 h-6" />
               <span className="text-white font-semibold">Connect Wallet</span>
             </div>
@@ -98,19 +98,21 @@ const Hero = () => {
       </div>
       
       {/* Add keyframes for the background animations */}
-      <style jsx>{`
-        @keyframes moveGlow {
-          0% { transform: translate(0, 0); }
-          50% { transform: translate(100px, -50px); }
-          100% { transform: translate(-50px, 100px); }
-        }
-        
-        @keyframes pulseAndMove {
-          0% { opacity: 0.1; transform: translate(0, 0) scale(0.9); }
-          50% { opacity: 0.2; transform: translate(50px, 30px) scale(1); }
-          100% { opacity: 0.1; transform: translate(-30px, -50px) scale(0.8); }
-        }
-      `}</style>
+      <style>
+        {`
+          @keyframes moveGlow {
+            0% { transform: translate(0, 0); }
+            50% { transform: translate(100px, -50px); }
+            100% { transform: translate(-50px, 100px); }
+          }
+          
+          @keyframes pulseAndMove {
+            0% { opacity: 0.1; transform: translate(0, 0) scale(0.9); }
+            50% { opacity: 0.2; transform: translate(50px, 30px) scale(1); }
+            100% { opacity: 0.1; transform: translate(-30px, -50px) scale(0.8); }
+          }
+        `}
+      </style>
     </div>
   );
 };
