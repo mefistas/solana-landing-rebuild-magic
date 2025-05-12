@@ -1,7 +1,7 @@
 
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
-import { Menu, X, ChevronDown } from 'lucide-react';
+import { Menu, X } from 'lucide-react';
 import { 
   NavigationMenu,
   NavigationMenuContent,
@@ -99,19 +99,19 @@ const Navbar = () => {
             </Link>
           </div>
           
-          {/* Desktop Navigation */}
-          <div className="hidden md:flex items-center space-x-1">
+          {/* Desktop Navigation - improved text clarity */}
+          <div className="hidden md:flex items-center space-x-4">
             <NavigationMenu>
-              <NavigationMenuList className="gap-1">
+              <NavigationMenuList className="gap-4">
                 {navItems.map((item) => (
                   <NavigationMenuItem key={item.title}>
                     {item.items ? (
                       <>
-                        <NavigationMenuTrigger className="bg-transparent text-gray-300 hover:text-white">
+                        <NavigationMenuTrigger className="bg-transparent text-white hover:text-white/90 font-medium">
                           {item.title}
                         </NavigationMenuTrigger>
                         <NavigationMenuContent>
-                          <ul className="grid w-[400px] gap-3 p-4 md:w-[500px] md:grid-cols-2 lg:w-[600px]">
+                          <ul className="grid w-[400px] gap-3 p-6 md:w-[500px] md:grid-cols-2 lg:w-[600px] bg-black/95 border border-gray-800">
                             {item.items.map((subItem) => (
                               <li key={subItem.title}>
                                 <NavigationMenuLink asChild>
@@ -135,7 +135,7 @@ const Navbar = () => {
                     ) : (
                       <a
                         href={item.href}
-                        className="text-gray-300 hover:text-white px-3 py-2 text-sm font-medium"
+                        className="text-white hover:text-white/90 px-3 py-2 text-sm font-medium"
                       >
                         {item.title}
                       </a>
@@ -161,7 +161,7 @@ const Navbar = () => {
 
       {/* Mobile menu */}
       {mobileMenuOpen && (
-        <div className="md:hidden bg-black border-t border-gray-800">
+        <div className="md:hidden bg-black/95 border-t border-gray-800">
           <div className="px-2 pt-2 pb-3 space-y-1 sm:px-3">
             {navItems.map((item) => (
               <div key={item.title}>

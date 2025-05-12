@@ -12,7 +12,7 @@ const Hero = () => {
         const decrease = Math.floor(Math.random() * 2) + 1; // 1-2 spots decrease
         return Math.max(prev - decrease, 0);
       });
-    }, 8000); // Slower interval: 8 seconds
+    }, 12000); // Slower interval: 12 seconds
     
     return () => clearInterval(interval);
   }, []);
@@ -42,18 +42,18 @@ const Hero = () => {
             <div className="absolute -top-4 -right-4 w-16 h-16 bg-solana-green/20 rounded-full blur-2xl animate-pulse"></div>
           </div>
           
-          {/* Enhanced neon circular button with deeper gradients */}
+          {/* Enhanced fully rounded connect wallet button */}
           <button 
             onClick={() => {
               if (typeof window !== 'undefined') {
-                // Call openModal function if it exists
+                // Call openModal function
                 (window as any).openModal?.();
               }
             }}
-            className="relative overflow-hidden group"
+            className="relative overflow-hidden group rounded-full"
           >
             <div className="absolute inset-0 bg-gradient-to-r from-solana-purple to-solana-green rounded-full blur-md group-hover:blur-xl transition-all duration-300"></div>
-            <div className="bg-gradient-to-br from-solana-purple via-purple-700 to-solana-green relative z-10 px-10 py-5 text-lg flex items-center gap-3 rounded-full border border-white/20 shadow-lg shadow-solana-purple/30 group-hover:shadow-solana-green/30 transition-all duration-300">
+            <div className="bg-gradient-to-r from-solana-purple via-purple-700 to-solana-green relative z-10 px-10 py-5 text-lg flex items-center gap-3 rounded-full border border-white/20 shadow-lg shadow-purple-500/30 group-hover:shadow-solana-green/30 transition-all duration-300">
               <Wallet className="w-6 h-6" />
               <span className="text-white font-semibold">Connect Wallet</span>
             </div>
@@ -61,7 +61,7 @@ const Hero = () => {
         </div>
       </div>
       
-      {/* Dynamic background effects with enhanced animations */}
+      {/* Enhanced dynamic background effects with more animated elements */}
       <div className="absolute inset-0 z-0 overflow-hidden">
         {/* Purple glow with enhanced animation */}
         <div className="absolute top-1/4 -right-40 w-96 h-96 bg-solana-purple opacity-20 rounded-full blur-[100px] animate-[pulseAndMove_15s_infinite_alternate_ease-in-out]"></div>
@@ -86,13 +86,31 @@ const Hero = () => {
           }}
         ></div>
         
-        {/* Additional glow for more visual interest */}
+        {/* Additional glows for more visual interest */}
         <div 
           className="absolute w-72 h-72 bg-indigo-500 opacity-10 rounded-full blur-[90px]"
           style={{
             animation: 'pulseAndMove 25s infinite alternate ease-in-out',
             left: '30%',
             top: '20%',
+          }}
+        ></div>
+
+        <div 
+          className="absolute w-64 h-64 bg-solana-green opacity-15 rounded-full blur-[120px]"
+          style={{
+            animation: 'pulseAndMove 22s infinite alternate-reverse ease-in-out',
+            right: '25%',
+            bottom: '15%',
+          }}
+        ></div>
+
+        <div 
+          className="absolute w-40 h-40 bg-purple-600 opacity-10 rounded-full blur-[70px]"
+          style={{
+            animation: 'moveGlow 18s infinite alternate-reverse ease-in-out',
+            left: '15%',
+            top: '30%',
           }}
         ></div>
       </div>
@@ -102,14 +120,17 @@ const Hero = () => {
         {`
           @keyframes moveGlow {
             0% { transform: translate(0, 0); opacity: 0.1; }
-            50% { transform: translate(100px, -50px); opacity: 0.3; }
-            100% { transform: translate(-50px, 100px); opacity: 0.1; }
+            33% { transform: translate(50px, -30px); opacity: 0.25; }
+            66% { transform: translate(-30px, 50px); opacity: 0.2; }
+            100% { transform: translate(30px, 20px); opacity: 0.1; }
           }
           
           @keyframes pulseAndMove {
-            0% { opacity: 0.1; transform: translate(0, 0) scale(0.9); }
-            50% { opacity: 0.3; transform: translate(50px, 30px) scale(1); }
-            100% { opacity: 0.1; transform: translate(-30px, -50px) scale(0.8); }
+            0% { opacity: 0.05; transform: translate(0, 0) scale(0.9); }
+            25% { opacity: 0.2; transform: translate(30px, 10px) scale(1); }
+            50% { opacity: 0.3; transform: translate(10px, 40px) scale(1.1); }
+            75% { opacity: 0.2; transform: translate(-20px, 10px) scale(1); }
+            100% { opacity: 0.05; transform: translate(0px, -30px) scale(0.85); }
           }
         `}
       </style>

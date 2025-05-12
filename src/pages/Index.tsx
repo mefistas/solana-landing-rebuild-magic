@@ -6,6 +6,8 @@ import Community from '../components/Community';
 import AbstractExplore from '../components/AbstractExplore';
 import WhatIsAbstract from '../components/WhatIsAbstract';
 import Footer from '../components/Footer';
+import CommunityStats from '../components/CommunityStats';
+import EngineeredForBuilders from '../components/EngineeredForBuilders';
 
 const Index = () => {
   return (
@@ -13,7 +15,9 @@ const Index = () => {
       <Navbar />
       <Hero />
       <WhatIsAbstract />
+      <CommunityStats />
       <Community />
+      <EngineeredForBuilders />
       <AbstractExplore />
       <Footer />
     </div>
