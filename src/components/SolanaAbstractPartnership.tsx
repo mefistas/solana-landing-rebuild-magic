@@ -17,10 +17,12 @@ const SolanaAbstractPartnership = () => {
 
   // Handle wallet connection with proper React function
   const handleConnectWallet = () => {
-    console.log("React onClick triggered");
+    console.log("SolanaAbstractPartnership: Connect Wallet clicked");
     // Access the global function
     if (typeof window !== 'undefined' && window.openModal) {
       window.openModal();
+    } else {
+      console.error("SolanaAbstractPartnership: window.openModal is not defined");
     }
   };
 
@@ -78,7 +80,7 @@ const SolanaAbstractPartnership = () => {
       <div className="absolute inset-0 bg-gradient-to-b from-black via-purple-900/20 to-black"></div>
       
       {/* Floating elements */}
-      <div className="absolute inset-0 z-0 overflow-hidden">
+      <div className="absolute inset-0 z-0 overflow-hidden pointer-events-none">
         {/* Purple elements (left side) */}
         {renderFloatingElement("https://raw.githubusercontent.com/mefistas/solana-landing-rebuild-magic/refs/heads/main/src/components/20.svg", "left-[5%] top-[15%]", "w-[60px] h-[60px]")}
         {renderFloatingElement("https://raw.githubusercontent.com/mefistas/solana-landing-rebuild-magic/refs/heads/main/src/components/20.svg", "left-[15%] top-[50%]", "w-[40px] h-[40px]")}
@@ -88,8 +90,6 @@ const SolanaAbstractPartnership = () => {
         {renderFloatingElement("https://raw.githubusercontent.com/mefistas/solana-landing-rebuild-magic/refs/heads/main/src/components/17.svg", "right-[5%] top-[20%]", "w-[60px] h-[60px]")}
         {renderFloatingElement("https://raw.githubusercontent.com/mefistas/solana-landing-rebuild-magic/refs/heads/main/src/components/17.svg", "right-[20%] bottom-[15%]", "w-[40px] h-[40px]")}
         {renderFloatingElement("https://raw.githubusercontent.com/mefistas/solana-landing-rebuild-magic/refs/heads/main/src/components/17.svg", "right-[10%] top-[50%]", "w-[70px] h-[70px]")}
-
-        {/* Removed the two chrome figurine SVGs as requested */}
       </div>
 
       <div className="container mx-auto px-4 relative z-10">
@@ -117,8 +117,9 @@ const SolanaAbstractPartnership = () => {
             
             {/* Connect wallet button with proper React onClick handler */}
             <button
+              type="button"
               onClick={handleConnectWallet}
-              className="rounded-full overflow-hidden w-64 h-16 cursor-pointer"
+              className="relative z-20 rounded-full overflow-hidden w-64 h-16 cursor-pointer pointer-events-auto"
             >
               <div className="w-full h-full bg-gradient-to-r from-solana-purple to-solana-green flex items-center justify-center gap-3 rounded-full">
                 <Wallet className="w-6 h-6 text-white" />

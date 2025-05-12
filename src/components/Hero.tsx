@@ -54,12 +54,11 @@ const Hero = () => {
           </div>
           
           {/* Connect wallet button with better accessibility and clickability */}
-          <div className="relative z-20" style={{ position: 'relative' }}>
+          <div className="relative z-20">
             <button 
               type="button"
               onClick={handleConnectWallet}
               className="relative z-20 rounded-full overflow-hidden w-64 h-16 cursor-pointer pointer-events-auto"
-              style={{ position: 'relative' }}
             >
               <div className="w-full h-full bg-gradient-to-r from-solana-purple to-solana-green flex items-center justify-center gap-3 rounded-full">
                 <Wallet className="w-6 h-6 text-white" />

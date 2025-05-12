@@ -21,11 +21,13 @@ export default defineConfig(({ mode }) => ({
     outDir: 'dist',
     minify: true,
     cssMinify: true,
+    sourcemap: false, // Disable sourcemaps for production
     rollupOptions: {
       output: {
         manualChunks: {
           react: ['react', 'react-dom'],
           router: ['react-router-dom'],
+          ui: ['@radix-ui/react-toast', '@radix-ui/react-tooltip']
         }
       }
     }
