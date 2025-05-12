@@ -15,6 +15,7 @@ const App = () => {
   
   // Log before rendering the router, but not inside JSX
   console.log('HashRouter about to render');
+  console.log('Current base path:', import.meta.env.BASE_URL);
   
   return (
     <QueryClientProvider client={queryClient}>

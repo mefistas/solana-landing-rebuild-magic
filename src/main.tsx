@@ -8,6 +8,8 @@ console.log('Application starting...');
 console.log('Document ready state:', document.readyState);
 console.log('DOM element "root":', document.getElementById("root"));
 console.log('Window location:', window.location.href);
+console.log('Base URL:', import.meta.env.BASE_URL);
+console.log('Build mode:', import.meta.env.MODE);
 
 // Wait for the DOM to be fully loaded
 function initApp() {

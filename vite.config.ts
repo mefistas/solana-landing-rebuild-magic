@@ -10,8 +10,8 @@ export default defineConfig(({ mode }) => ({
     host: "::",
     port: 8080,
   },
-  // Use relative paths for GitHub Pages compatibility
-  base: "./",
+  // GitHub Pages requires the repo name in the base path
+  base: "/solana-landing-rebuild-magic/",
   plugins: [
     react(),
     mode === 'development' && componentTagger(),
