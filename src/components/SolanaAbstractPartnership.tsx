@@ -12,7 +12,7 @@ const SolanaAbstractPartnership = () => {
         {/* Purple cube SVGs - left side - replaced with 20.svg */}
         <div className="absolute left-[5%] top-[15%]">
           <img 
-            src="/src/components/20.svg" 
+            src="https://raw.githubusercontent.com/mefistas/solana-landing-rebuild-magic/refs/heads/main/src/components/20.svg" 
             alt="Purple Element" 
             className="w-[60px] h-[60px]" 
             style={{ background: 'transparent' }}
@@ -20,7 +20,7 @@ const SolanaAbstractPartnership = () => {
         </div>
         <div className="absolute left-[15%] top-[50%]">
           <img 
-            src="/src/components/20.svg" 
+            src="https://raw.githubusercontent.com/mefistas/solana-landing-rebuild-magic/refs/heads/main/src/components/20.svg" 
             alt="Purple Element" 
             className="w-[40px] h-[40px]" 
             style={{ background: 'transparent' }}
@@ -28,7 +28,7 @@ const SolanaAbstractPartnership = () => {
         </div>
         <div className="absolute left-[8%] bottom-[20%]">
           <img 
-            src="/src/components/20.svg" 
+            src="https://raw.githubusercontent.com/mefistas/solana-landing-rebuild-magic/refs/heads/main/src/components/20.svg" 
             alt="Purple Element" 
             className="w-[80px] h-[80px]" 
             style={{ background: 'transparent' }}
@@ -38,7 +38,7 @@ const SolanaAbstractPartnership = () => {
         {/* Green cube SVGs - right side - replaced with 17.svg */}
         <div className="absolute right-[5%] top-[20%]">
           <img 
-            src="/src/components/17.svg" 
+            src="https://raw.githubusercontent.com/mefistas/solana-landing-rebuild-magic/refs/heads/main/src/components/17.svg" 
             alt="Green Element" 
             className="w-[60px] h-[60px]" 
             style={{ background: 'transparent' }}
@@ -54,7 +54,7 @@ const SolanaAbstractPartnership = () => {
         </div>
         <div className="absolute right-[10%] top-[50%]">
           <img 
-            src="/src/components/17.svg" 
+            src="https://raw.githubusercontent.com/mefistas/solana-landing-rebuild-magic/refs/heads/main/src/components/17.svg" 
             alt="Green Element" 
             className="w-[70px] h-[70px]" 
             style={{ background: 'transparent' }}
