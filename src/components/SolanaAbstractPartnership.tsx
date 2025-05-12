@@ -76,7 +76,7 @@ const SolanaAbstractPartnership = () => {
         
         <div className="absolute right-[10%] bottom-[10%] opacity-70">
           <svg width="120" height="180" viewBox="0 0 120 180" fill="none" xmlns="#">
-            <path d="M60 20 L80 60 L75 130 L60 150 L45 130 L40 60 Z" fill="url(#chrome-gradient-2)" />
+            <path d="M60 20 L80 60 L75 130 L60 150 L45 130 L40 60 Z" fill="https://raw.githubusercontent.com/mefistas/solana-landing-rebuild-magic/refs/heads/main/src/components/23.svg" />
             <defs>
               <linearGradient id="chrome-gradient-2" x1="0" y1="0" x2="100%" y2="100%">
                 <stop stopColor="#FFFFFF" stopOpacity="0.9" />
