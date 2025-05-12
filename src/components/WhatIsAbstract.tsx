@@ -4,6 +4,8 @@ import { Button } from '@/components/ui/button';
 import { ArrowRight } from 'lucide-react';
 
 const WhatIsAbstract = () => {
+  const logoSrc = "https://raw.githubusercontent.com/mefistas/solana-landing-rebuild-magic/refs/heads/main/src/components/3.svg";
+  
   return (
     <section className="py-24 bg-black text-white">
       <div className="container mx-auto px-4">
@@ -39,8 +41,13 @@ const WhatIsAbstract = () => {
             </div>
           </div>
           <div className="bg-gradient-to-br from-solana-green/20 to-transparent p-8 rounded-2xl">
-            {logoSrc="https://raw.githubusercontent.com/mefistas/solana-landing-rebuild-magic/refs/heads/main/src/components/3.svg"}
             <div className="h-64 flex items-center justify-center">
+              <img 
+                src={logoSrc} 
+                alt="Abstract Logo" 
+                className="w-24 h-24 mb-4"
+                style={{ background: 'transparent' }}
+              />
               <div className="text-solana-green text-7xl font-bold">Abstract</div>
             </div>
             <p className="text-center text-gray-300 mt-4">
