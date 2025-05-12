@@ -15,14 +15,14 @@ import { cn } from "@/lib/utils";
 const Navbar = () => {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
   
-  // Updated navigation structure directly from solana.com
+  // Updated navigation structure with proper external links from solana.com
   const navItems = [
     {
       title: "Developers",
       items: [
         {
           title: "Start Building",
-          href: "/developers",
+          href: "https://solana.com/developers",
           description: "Learn how to build on Solana's high-performance blockchain."
         },
         {
@@ -52,27 +52,27 @@ const Navbar = () => {
       items: [
         {
           title: "Mainnet Beta",
-          href: "/network",
+          href: "https://solana.com/network",
           description: "Explore Solana's production blockchain network."
         },
         {
           title: "Validators",
-          href: "/validators",
+          href: "https://solana.com/validators",
           description: "Learn about running a Solana validator node."
         },
         {
           title: "Delegation Program",
-          href: "/delegation-program",
+          href: "https://solana.com/delegation-program",
           description: "Details on Solana's validator delegation program."
         },
         {
           title: "Nakamoto Coefficient",
-          href: "/nakamoto-coefficient",
+          href: "https://solana.com/nakamoto-coefficient",
           description: "Understand Solana's decentralization metrics."
         },
         {
           title: "State Compression",
-          href: "/state-compression",
+          href: "https://solana.com/state-compression",
           description: "Learn about on-chain data compression technology."
         }
       ]
@@ -82,7 +82,7 @@ const Navbar = () => {
       items: [
         {
           title: "Ecosystem",
-          href: "/ecosystem",
+          href: "https://solana.com/ecosystem",
           description: "Explore projects and teams building on Solana."
         },
         {
@@ -97,7 +97,7 @@ const Navbar = () => {
         },
         {
           title: "Events",
-          href: "/events",
+          href: "https://solana.com/events",
           description: "Find Solana events happening around the world."
         },
         {
@@ -112,24 +112,24 @@ const Navbar = () => {
       items: [
         {
           title: "Solana Mobile",
-          href: "/solana-mobile",
+          href: "https://solana.com/solana-mobile",
           description: "Web3 mobile devices and software stack."
         },
         {
           title: "Saga",
-          href: "/saga",
+          href: "https://solana.com/saga",
           description: "The crypto-friendly mobile phone by Solana."
         },
         {
           title: "Solana Pay",
-          href: "/solana-pay",
+          href: "https://solana.com/solana-pay",
           description: "Next-generation payment protocol built on Solana."
         }
       ]
     },
     {
       title: "About",
-      href: "/about",
+      href: "https://solana.com/about",
     },
   ];
 
@@ -163,8 +163,8 @@ const Navbar = () => {
                                   <a
                                     className="block select-none space-y-1 rounded-md p-3 leading-none no-underline outline-none transition-colors hover:bg-gray-800 hover:text-white focus:bg-gray-800 focus:text-white"
                                     href={subItem.href}
-                                    target={subItem.href.startsWith('http') ? "_blank" : undefined}
-                                    rel={subItem.href.startsWith('http') ? "noopener noreferrer" : undefined}
+                                    target="_blank"
+                                    rel="noopener noreferrer"
                                   >
                                     <div className="text-sm font-medium text-white">
                                       {subItem.title}
@@ -182,6 +182,8 @@ const Navbar = () => {
                     ) : (
                       <a
                         href={item.href}
+                        target="_blank"
+                        rel="noopener noreferrer"
                         className="text-white hover:text-white/90 px-3 py-2 text-base font-medium tracking-wide"
                       >
                         {item.title}
@@ -220,8 +222,8 @@ const Navbar = () => {
                         <a
                           key={subItem.title}
                           href={subItem.href}
-                          target={subItem.href.startsWith('http') ? "_blank" : undefined}
-                          rel={subItem.href.startsWith('http') ? "noopener noreferrer" : undefined}
+                          target="_blank"
+                          rel="noopener noreferrer"
                           className="text-gray-400 hover:text-white block px-3 py-2 rounded-md text-sm"
                         >
                           {subItem.title}
@@ -232,6 +234,8 @@ const Navbar = () => {
                 ) : (
                   <a
                     href={item.href}
+                    target="_blank"
+                    rel="noopener noreferrer" 
                     className="text-gray-300 hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium"
                   >
                     {item.title}
