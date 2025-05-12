@@ -11,6 +11,7 @@ const Navbar = () => {
     setActiveDropdown(activeDropdown === label ? null : label);
   };
 
+  // Simplified menu items to reduce stacking
   const menuItems = [
     {
       label: 'Build',
@@ -18,8 +19,6 @@ const Navbar = () => {
       items: [
         { label: 'Developer Resources', href: 'https://solana.com/developers' },
         { label: 'Documentation', href: 'https://docs.solana.com/' },
-        { label: 'RPC Providers', href: 'https://solana.com/rpc' },
-        { label: 'Validators', href: 'https://solana.com/validators' }
       ]
     },
     {
@@ -27,30 +26,16 @@ const Navbar = () => {
       dropdown: true,
       items: [
         { label: 'Economics', href: 'https://solana.com/solananomics' },
-        { label: 'Nakamoto Upgrade', href: 'https://solana.com/nakamoto' },
-        { label: 'Throughput', href: 'https://solana.com/news/validator-health' }
+        { label: 'Nakamoto', href: 'https://solana.com/nakamoto' },
       ]
     },
     {
       label: 'Community',
-      dropdown: true,
-      items: [
-        { label: 'Bootcamp', href: 'https://solana.com/developers/bootcamp' },
-        { label: 'Grants', href: 'https://solana.org' },
-        { label: 'Events', href: 'https://solana.com/events' }
-      ]
+      href: 'https://solana.com/community'
     },
     {
       label: 'About',
-      dropdown: true,
-      items: [
-        { label: 'Blog', href: 'https://solana.com/news' },
-        { label: 'Careers', href: 'https://solana.com/careers' },
-        { label: 'Foundation', href: 'https://foundation.solana.org' },
-        { label: 'Phoenix Payment Tender', href: 'https://solana.com/tenders' },
-        { label: 'Policies', href: 'https://solana.com/policies' },
-        { label: 'Press Kit', href: 'https://solana.com/press-kit' },
-      ]
+      href: 'https://solana.com/about'
     }
   ];
 
@@ -65,7 +50,7 @@ const Navbar = () => {
           </div>
           
           {/* Desktop menu */}
-          <nav className="hidden md:flex justify-end flex-1 space-x-8">
+          <nav className="hidden md:flex justify-end flex-1 space-x-10">
             {menuItems.map((item) => (
               <div key={item.label} className="relative">
                 {item.dropdown ? (
@@ -95,7 +80,7 @@ const Navbar = () => {
                   </div>
                 ) : (
                   <a
-                    href="#"
+                    href={item.href}
                     className="text-gray-300 hover:text-white px-3 py-2 text-sm font-medium"
                   >
                     {item.label}
@@ -149,7 +134,7 @@ const Navbar = () => {
                   </>
                 ) : (
                   <a
-                    href="#"
+                    href={item.href || "#"}
                     className="text-gray-300 hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium"
                   >
                     {item.label}
