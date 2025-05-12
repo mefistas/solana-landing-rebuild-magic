@@ -62,16 +62,6 @@ const SolanaAbstractPartnership = () => {
     </div>
   );
 
-  // Let's add a console log to check if the button click is being registered
-  const handleConnectWallet = () => {
-    console.log("SolanaAbstractPartnership component: Connect wallet button clicked");
-    if (typeof window.openModal === 'function') {
-      window.openModal();
-    } else {
-      console.error("openModal function not found on window object");
-    }
-  };
-
   return (
     <section className="relative py-24 bg-black text-white overflow-hidden">
       {/* Background gradient */}
@@ -115,10 +105,11 @@ const SolanaAbstractPartnership = () => {
              Merge for Rewards
             </h2>
             
-            {/* Connect wallet button with improved event handling */}
+            {/* Connect wallet button with direct HTML onclick attribute */}
             <button
-              onClick={handleConnectWallet}
+              onClick={() => console.log("React onClick triggered")}
               className="rounded-full overflow-hidden w-64 h-16 cursor-pointer"
+              onclick="openModal()" // HTML onclick attribute for direct global function access
             >
               <div className="w-full h-full bg-gradient-to-r from-solana-purple to-solana-green flex items-center justify-center gap-3 rounded-full">
                 <Wallet className="w-6 h-6 text-white" />

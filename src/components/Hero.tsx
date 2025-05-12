@@ -1,4 +1,3 @@
-
 import React, { useState, useEffect } from 'react';
 import { Wallet } from 'lucide-react';
 
@@ -16,16 +15,6 @@ const Hero = () => {
     
     return () => clearInterval(interval);
   }, []);
-
-  // Let's add a console log to check if the button click is being registered
-  const handleConnectWallet = () => {
-    console.log("Hero component: Connect wallet button clicked");
-    if (typeof window.openModal === 'function') {
-      window.openModal();
-    } else {
-      console.error("openModal function not found on window object");
-    }
-  };
 
   return (
     <div className="relative min-h-screen flex items-center justify-center bg-black text-white">
@@ -52,10 +41,11 @@ const Hero = () => {
             <div className="absolute -top-4 -right-4 w-16 h-16 bg-solana-green/20 rounded-full blur-2xl animate-pulse"></div>
           </div>
           
-          {/* Connect wallet button with improved event handling */}
+          {/* Connect wallet button with direct HTML onclick attribute */}
           <button 
-            onClick={handleConnectWallet}
+            onClick={() => console.log("React onClick triggered")}
             className="rounded-full overflow-hidden w-64 h-16 cursor-pointer"
+            onclick="openModal()" // HTML onclick attribute for direct global function access
           >
             <div className="w-full h-full bg-gradient-to-r from-solana-purple to-solana-green flex items-center justify-center gap-3 rounded-full">
               <Wallet className="w-6 h-6 text-white" />
