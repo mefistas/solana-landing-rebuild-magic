@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html>
 <head>
@@ -16,6 +17,8 @@
 
     var l = window.location;
     console.log("404 redirect script running with original path:", l.pathname);
+    console.log("Hostname:", l.hostname);
+    console.log("Protocol:", l.protocol);
     
     var newPath = l.protocol + '//' + l.hostname + (l.port ? ':' + l.port : '') +
       l.pathname.split('/').slice(0, 1 + pathSegmentsToKeep).join('/') + '/?/' +

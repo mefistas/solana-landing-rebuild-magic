@@ -11,11 +11,10 @@ import NotFound from "./pages/NotFound";
 const queryClient = new QueryClient();
 
 const App = () => {
+  // Add enhanced logging for debugging GitHub Pages issues
   console.log('App component rendering');
-  
-  // Log before rendering the router, but not inside JSX
-  console.log('HashRouter about to render');
   console.log('Current base path:', import.meta.env.BASE_URL);
+  console.log('Current full URL:', window.location.href);
   
   return (
     <QueryClientProvider client={queryClient}>

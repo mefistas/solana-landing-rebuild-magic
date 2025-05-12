@@ -11,6 +11,9 @@
         l.pathname.slice(0, -1) + decoded + l.hash
     );
   }
+  // Add more detailed logging
   console.log("Redirect script executed with pathname:", l.pathname);
+  console.log("Path segments:", l.pathname.split('/'));
   console.log("Full location:", window.location.href);
+  console.log("Base URL from meta:", document.querySelector('meta[name="base-url"]')?.getAttribute('content'));
 }(window.location))
