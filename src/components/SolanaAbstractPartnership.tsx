@@ -1,3 +1,4 @@
+
 import React from 'react';
 
 const SolanaAbstractPartnership = () => {
@@ -104,12 +105,12 @@ const SolanaAbstractPartnership = () => {
               Solana + Abstract chain
             </h2>
             
-            {/* Connect wallet button with no square frames */}
+            {/* Connect wallet button with no dot and no square frames */}
             <button
               onClick={() => window.openModal?.()}
-              className="rounded-full px-8 py-3 bg-gradient-to-r from-solana-purple to-solana-green text-white font-medium flex items-center gap-2"
+              className="rounded-full px-8 py-3 bg-gradient-to-r from-solana-purple to-solana-green text-white font-medium"
             >
-              Connect wallet <span className="inline-block w-2 h-2 rounded-full bg-white ml-1"></span>
+              Connect wallet
             </button>
           </div>
           
@@ -143,7 +144,7 @@ const SolanaAbstractPartnership = () => {
         </div>
       </div>
       
-      {/* Animation styles - remove animation from SVGs */}
+      {/* Animation styles - add animation to SVGs in text boxes */}
       <style>
         {`
           @keyframes float {
@@ -152,8 +153,8 @@ const SolanaAbstractPartnership = () => {
             100% { transform: translateY(0px); }
           }
           
-          svg {
-            animation: none; /* Removed animation */
+          .p-6 svg {
+            animation: float 4s ease-in-out infinite;
           }
         `}
       </style>
