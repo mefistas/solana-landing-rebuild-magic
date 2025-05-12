@@ -129,7 +129,7 @@ const Navbar = () => {
     },
     {
       title: "About",
-      href: "https://solana.com/about",
+      href: "https://solana.com/developers/guides/permissioned-environments",
     },
   ];
 
