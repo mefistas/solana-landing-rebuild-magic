@@ -71,12 +71,7 @@ const Community = () => {
               start with Solana community.
             </p>
             <div className="flex flex-wrap gap-4">
-              <Button className="px-6 py-3 bg-solana-purple hover:bg-opacity-90 text-white rounded-lg">
-                <a href="https://solana.com/discord" target="_blank" rel="noopener noreferrer">
-                  Join Discord
-                </a>
-              </Button>
-              <Button className="px-6 py-3 bg-solana-purple hover:bg-opacity-90 text-white rounded-lg">
+              <Button className="px-6 py-3 bg-gradient-to-r from-solana-purple to-solana-green hover:shadow-lg hover:shadow-solana-purple/20 text-white rounded-full border border-white/10">
                 <a href="https://solana.com/ecosystem" target="_blank" rel="noopener noreferrer">
                   Explore ecosystem
                 </a>

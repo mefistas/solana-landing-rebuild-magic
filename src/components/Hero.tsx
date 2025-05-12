@@ -42,7 +42,7 @@ const Hero = () => {
             <div className="absolute -top-4 -right-4 w-16 h-16 bg-solana-green/20 rounded-full blur-2xl animate-pulse"></div>
           </div>
           
-          {/* Enhanced circular button similar to solana.com with deeper gradients */}
+          {/* Enhanced neon circular button with deeper gradients */}
           <button 
             onClick={() => {
               if (typeof window !== 'undefined') {
@@ -52,8 +52,8 @@ const Hero = () => {
             }}
             className="relative overflow-hidden group"
           >
-            <div className="absolute inset-0 bg-gradient-to-r from-solana-purple to-purple-700 rounded-full blur-sm group-hover:blur-md transition-all duration-300"></div>
-            <div className="bg-gradient-to-br from-solana-purple via-purple-700 to-indigo-600 relative z-10 px-10 py-5 text-lg flex items-center gap-3 rounded-full border border-white/10 shadow-lg group-hover:shadow-solana-purple/30 transition-all duration-300">
+            <div className="absolute inset-0 bg-gradient-to-r from-solana-purple to-solana-green rounded-full blur-md group-hover:blur-xl transition-all duration-300"></div>
+            <div className="bg-gradient-to-br from-solana-purple via-purple-700 to-solana-green relative z-10 px-10 py-5 text-lg flex items-center gap-3 rounded-full border border-white/20 shadow-lg shadow-solana-purple/30 group-hover:shadow-solana-green/30 transition-all duration-300">
               <Wallet className="w-6 h-6" />
               <span className="text-white font-semibold">Connect Wallet</span>
             </div>
@@ -61,12 +61,12 @@ const Hero = () => {
         </div>
       </div>
       
-      {/* Dynamic background effects - animated similar to solana.com */}
+      {/* Dynamic background effects with enhanced animations */}
       <div className="absolute inset-0 z-0 overflow-hidden">
-        {/* Purple glow */}
-        <div className="absolute top-1/4 -right-40 w-96 h-96 bg-solana-purple opacity-20 rounded-full blur-[100px] animate-pulse"></div>
+        {/* Purple glow with enhanced animation */}
+        <div className="absolute top-1/4 -right-40 w-96 h-96 bg-solana-purple opacity-20 rounded-full blur-[100px] animate-[pulseAndMove_15s_infinite_alternate_ease-in-out]"></div>
         
-        {/* Green glow with position animation */}
+        {/* Green glow with enhanced position animation */}
         <div 
           className="absolute w-80 h-80 bg-solana-green opacity-20 rounded-full blur-[100px]"
           style={{
@@ -101,14 +101,14 @@ const Hero = () => {
       <style>
         {`
           @keyframes moveGlow {
-            0% { transform: translate(0, 0); }
-            50% { transform: translate(100px, -50px); }
-            100% { transform: translate(-50px, 100px); }
+            0% { transform: translate(0, 0); opacity: 0.1; }
+            50% { transform: translate(100px, -50px); opacity: 0.3; }
+            100% { transform: translate(-50px, 100px); opacity: 0.1; }
           }
           
           @keyframes pulseAndMove {
             0% { opacity: 0.1; transform: translate(0, 0) scale(0.9); }
-            50% { opacity: 0.2; transform: translate(50px, 30px) scale(1); }
+            50% { opacity: 0.3; transform: translate(50px, 30px) scale(1); }
             100% { opacity: 0.1; transform: translate(-30px, -50px) scale(0.8); }
           }
         `}
