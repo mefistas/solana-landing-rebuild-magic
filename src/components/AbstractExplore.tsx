@@ -30,41 +30,51 @@ const AbstractExplore = () => {
   }, []);
   
   return (
-    <section className="py-24 bg-gradient-to-b from-black to-gray-900 text-white">
+    <section className="py-24 bg-black text-white">
       <div className="container mx-auto px-4">
-        <div className="max-w-3xl mx-auto text-center mb-12">
-          <h2 className="text-4xl md:text-5xl font-bold mb-6">Explore the most powerful collaboration of the year</h2>
+        <div className="max-w-3xl mx-auto text-center mb-16">
+          <h2 className="text-5xl md:text-6xl font-bold mb-6">
+            Explore the most powerful collaboration of the year
+          </h2>
           <p className="text-xl text-gray-300">
             {spotsLeft} / {totalSpots} 1SOL ABS airdrop spots left
           </p>
         </div>
         
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
           {[1, 2, 3].map((item) => (
             <div 
               key={item} 
-              className="bg-gray-800 bg-opacity-50 backdrop-blur-sm rounded-xl p-8 hover:bg-opacity-70 transition-all border border-gray-700"
+              className="bg-[#0B0F19] border border-gray-800 rounded-2xl p-8 hover:border-gray-700 transition-all"
             >
-              <div className="h-12 w-12 bg-solana-green rounded-full mb-4 flex items-center justify-center">
-                {/* Empty circle with no number */}
+              <div className="h-14 w-14 bg-solana-green rounded-full mb-6 flex items-center justify-center">
+                {/* Empty green circle with no number */}
               </div>
-              <h3 className="text-2xl font-bold mb-3">Featured App {item}</h3>
-              <p className="text-gray-300 mb-6">
+              <h3 className="text-2xl font-bold mb-4">Featured App {item}</h3>
+              <p className="text-gray-400 mb-8">
                 Discover incredible applications built on Solana's fast and scalable blockchain.
               </p>
-              <Button variant="outline" className="border-solana-green text-solana-green hover:bg-solana-green/10">
+              <Button 
+                variant="outline" 
+                className="border-solana-green text-solana-green hover:bg-transparent hover:text-white rounded-full px-8 py-2 hover:border-white transition-all"
+              >
                 Explore
               </Button>
             </div>
           ))}
         </div>
         
-        <div className="text-center mt-12">
-          <Button size="lg" className="bg-solana-green text-black hover:bg-opacity-90 px-8 py-6 text-lg">
-            <a href="https://abs.xyz/" target="_blank" rel="noopener noreferrer">
+        <div className="text-center mt-16">
+          <a 
+            href="https://abs.xyz/" 
+            target="_blank" 
+            rel="noopener noreferrer"
+            className="inline-block"
+          >
+            <button className="bg-solana-green text-black hover:bg-opacity-90 rounded-full px-12 py-4 text-lg font-medium transition-all">
               Explore All Apps
-            </a>
-          </Button>
+            </button>
+          </a>
         </div>
       </div>
     </section>
