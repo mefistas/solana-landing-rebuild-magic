@@ -116,9 +116,9 @@ const Navbar = () => {
           description: "Web3 mobile devices and software stack."
         },
         {
-          title: "Saga",
-          href: "https://solana.com/developers/guides/games/getting-started-with-game-development",
-          description: "The crypto-friendly mobile phone by Solana."
+          title: "Expo",
+          href: "https://solana.com/developers/courses/mobile/solana-mobile-dapps-with-expo",
+          description: "Building Solana Mobile dApps with Expo."
         },
         {
           title: "Solana Pay",
