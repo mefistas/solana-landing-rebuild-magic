@@ -18,8 +18,8 @@ const App = () => {
       <TooltipProvider>
         <Toaster />
         <Sonner />
+        {console.log('HashRouter about to render')}
         <HashRouter>
-          {console.log('HashRouter rendering')}
           <Routes>
             <Route path="/" element={<Index />} />
             {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
