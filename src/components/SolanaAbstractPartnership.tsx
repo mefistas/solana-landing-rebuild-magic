@@ -20,7 +20,7 @@ const SolanaAbstractPartnership = () => {
     title, 
     borderColor, 
     dotColor,
-    logoSize = "w-10 h-10", // Default size, can be overridden
+    logoSize = "w-12 h-12", // Default size, can be overridden
     heading,
     description,
     bulletPoints
@@ -102,7 +102,7 @@ const SolanaAbstractPartnership = () => {
           {/* Center content */}
           <div className="text-center flex flex-col items-center">
             <h2 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-8 bg-gradient-to-r from-solana-purple to-solana-green bg-clip-text text-transparent">
-              AIRDROP REQUAIREMENTS 
+              MASSIVE DROP
             </h2>
             
             <button
@@ -119,7 +119,7 @@ const SolanaAbstractPartnership = () => {
             title="Abstract"
             borderColor="border-green-500/20"
             dotColor="text-solana-green"
-            logoSize="w-12 h-12" /* Increased size by 15% from w-12 h-12 */
+            logoSize="w-16 h-16" /* Increased size by 15% from w-12 h-12 */
             heading="Earn by playing — built for everyone."
             description="Start exploring the world of Abstract"
             bulletPoints={[
