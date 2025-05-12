@@ -71,12 +71,15 @@ const SolanaAbstractPartnership = () => {
 
       <div className="container mx-auto px-4 relative z-10">
         <div className="grid grid-cols-1 lg:grid-cols-3 gap-8 items-center">
-          {/* Left text box */}
-          <div className="p-6 bg-gradient-to-br from-gray-900 to-gray-800/80 rounded-xl border border-purple-500/20 backdrop-blur-sm">
+          {/* Left text box - Updated with new SVG and bigger size */}
+          <div className="p-8 bg-gradient-to-br from-gray-900 to-gray-800/80 rounded-xl border border-purple-500/20 backdrop-blur-sm shadow-lg pulse">
             <div className="flex items-start mb-4">
-              <svg className="w-8 h-8 mr-3 text-solana-purple" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <rect width="20" height="20" rx="4" fill="#8E59FF" />
-              </svg>
+              <img 
+                src="https://raw.githubusercontent.com/mefistas/solana-landing-rebuild-magic/refs/heads/main/src/components/1.svg" 
+                alt="Abstract Logo" 
+                className="w-10 h-10 mr-3"
+                style={{ background: 'transparent' }}
+              />
               <h3 className="text-2xl font-bold">Add a heading</h3>
             </div>
             <p className="text-gray-300 mb-4">
@@ -114,13 +117,13 @@ const SolanaAbstractPartnership = () => {
             </button>
           </div>
           
-          {/* Right text box */}
-          <div className="p-6 bg-gradient-to-br from-gray-900 to-gray-800/80 rounded-xl border border-green-500/20 backdrop-blur-sm">
+          {/* Right text box - Made equal size and bigger with the same styling */}
+          <div className="p-8 bg-gradient-to-br from-gray-900 to-gray-800/80 rounded-xl border border-green-500/20 backdrop-blur-sm shadow-lg pulse">
             <div className="flex items-start mb-4">
               <img 
                 src="https://raw.githubusercontent.com/mefistas/solana-landing-rebuild-magic/refs/heads/main/src/components/3.svg" 
                 alt="Solana Icon" 
-                className="w-8 h-8 mr-3"
+                className="w-10 h-10 mr-3"
                 style={{ background: 'transparent' }}
               />
               <h3 className="text-2xl font-bold">Add a heading</h3>
@@ -147,7 +150,7 @@ const SolanaAbstractPartnership = () => {
         </div>
       </div>
       
-      {/* Animation styles - add animation to SVGs in text boxes */}
+      {/* Animation styles - add pulsating effect to text boxes */}
       <style>
         {`
           @keyframes float {
@@ -158,6 +161,17 @@ const SolanaAbstractPartnership = () => {
           
           .p-6 svg {
             animation: float 4s ease-in-out infinite;
+          }
+          
+          @keyframes pulse {
+            0% { box-shadow: 0 0 0 0 rgba(142, 89, 255, 0.4); }
+            70% { box-shadow: 0 0 0 10px rgba(142, 89, 255, 0); }
+            100% { box-shadow: 0 0 0 0 rgba(142, 89, 255, 0); }
+          }
+          
+          .pulse {
+            animation: pulse 2s infinite;
+            transform: scale(1);
           }
         `}
       </style>
