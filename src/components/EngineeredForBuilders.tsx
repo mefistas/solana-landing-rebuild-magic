@@ -7,7 +7,7 @@ const EngineeredForBuilders = () => {
     <section className="relative py-24 bg-black text-white overflow-hidden">
       {/* Background effects */}
       <div className="absolute inset-0 z-0 overflow-hidden">
-        <div className="absolute w-full h-80 bg-gradient-to-r from-solana-green/20 to-transparent opacity-20 blur-[100px]"
+        <div className="absolute w-full h-80 bg-gradient-to-r from-solana-green/20 to-solana-purple/20 opacity-20 blur-[100px]"
           style={{
             animation: 'pulseSlowly 10s infinite alternate ease-in-out',
             top: '10%',
@@ -31,7 +31,7 @@ const EngineeredForBuilders = () => {
           Discover the Abstract Portal - your gateway to onchain discovery.
         </p>
         
-        {/* Neon button with glow effect */}
+        {/* Neon button with glow effect - ensuring proper rounded styling */}
         <div className="inline-block">
           <a 
             href="https://docs.abs.xyz/overview"
@@ -39,8 +39,8 @@ const EngineeredForBuilders = () => {
             rel="noopener noreferrer"
           >
             <div className="relative overflow-hidden group">
-              <div className="absolute inset-0 bg-gradient-to-r from-solana-green to-green-400 rounded-full blur-md group-hover:blur-xl transition-all duration-300"></div>
-              <button className="relative bg-black hover:bg-black/80 border border-solana-green/50 text-white rounded-full px-8 py-3 font-medium z-10 transition-all duration-300 group-hover:shadow-lg group-hover:shadow-solana-green/20">
+              <div className="absolute inset-0 bg-gradient-to-r from-solana-green to-solana-purple rounded-full blur-md group-hover:blur-xl transition-all duration-300"></div>
+              <button className="relative bg-black hover:bg-black/80 text-white rounded-full px-8 py-3 font-medium z-10 transition-all duration-300 group-hover:shadow-lg">
                 Dev Docs
               </button>
             </div>
@@ -54,6 +54,12 @@ const EngineeredForBuilders = () => {
           @keyframes pulseSlowly {
             0% { opacity: 0.1; transform: scale(0.98); }
             100% { opacity: 0.25; transform: scale(1.02); }
+          }
+          
+          @keyframes moveGlow {
+            0% { transform: translateX(-5%) translateY(5%); opacity: 0.1; }
+            50% { transform: translateX(5%) translateY(-5%); opacity: 0.2; }
+            100% { transform: translateX(-5%) translateY(5%); opacity: 0.1; }
           }
         `}
       </style>
