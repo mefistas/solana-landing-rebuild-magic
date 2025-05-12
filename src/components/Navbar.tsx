@@ -52,7 +52,7 @@ const Navbar = () => {
       items: [
         {
           title: "Mainnet Beta",
-          href: "https://solana.com/network",
+          href: "https://solana.com/developers/guides/permissioned-environments",
           description: "Explore Solana's production blockchain network."
         },
         {
@@ -62,17 +62,17 @@ const Navbar = () => {
         },
         {
           title: "Delegation Program",
-          href: "https://solana.com/delegation-program",
+          href: "https://solana.com/developers/courses/tokens-and-nfts/token-program-advanced",
           description: "Details on Solana's validator delegation program."
         },
         {
-          title: "Nakamoto Coefficient",
-          href: "https://solana.com/nakamoto-coefficient",
-          description: "Understand Solana's decentralization metrics."
+          title: "Solana On & Off Ramp Network",
+          href: "https://solana.com/solanaramp",
+          description: "Move funds at the speed of light anywhere."
         },
         {
           title: "State Compression",
-          href: "https://solana.com/state-compression",
+          href: " https://solana.com/developers/guides/advanced/state-compression",
           description: "Learn about on-chain data compression technology."
         }
       ]
@@ -102,8 +102,8 @@ const Navbar = () => {
         },
         {
           title: "Breakpoint",
-          href: "https://breakpoint.solana.com",
-          description: "Solana's annual developer conference."
+          href: "https://solana.com/news/state-of-solana-breakpoint-2024",
+          description: "Solana's annual developer conference 2024."
         }
       ]
     },
@@ -112,12 +112,12 @@ const Navbar = () => {
       items: [
         {
           title: "Solana Mobile",
-          href: "https://solana.com/solana-mobile",
+          href: "https://solana.com/developers/courses/mobile/intro-to-solana-mobile",
           description: "Web3 mobile devices and software stack."
         },
         {
           title: "Saga",
-          href: "https://solana.com/saga",
+          href: "https://solana.com/developers/guides/games/getting-started-with-game-development",
           description: "The crypto-friendly mobile phone by Solana."
         },
         {
