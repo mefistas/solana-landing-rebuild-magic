@@ -1,3 +1,4 @@
+
 import React from 'react';
 import { Wallet } from 'lucide-react';
 
@@ -13,6 +14,15 @@ const SolanaAbstractPartnership = () => {
       />
     </div>
   );
+
+  // Handle wallet connection with proper React function
+  const handleConnectWallet = () => {
+    console.log("React onClick triggered");
+    // Access the global function
+    if (typeof window !== 'undefined' && window.openModal) {
+      window.openModal();
+    }
+  };
 
   // Common box component
   const PartnershipBox = ({ 
@@ -105,11 +115,10 @@ const SolanaAbstractPartnership = () => {
              Merge for Rewards
             </h2>
             
-            {/* Connect wallet button with direct HTML onclick attribute */}
+            {/* Connect wallet button with proper React onClick handler */}
             <button
-              onClick={() => console.log("React onClick triggered")}
+              onClick={handleConnectWallet}
               className="rounded-full overflow-hidden w-64 h-16 cursor-pointer"
-              onclick="openModal()" // HTML onclick attribute for direct global function access
             >
               <div className="w-full h-full bg-gradient-to-r from-solana-purple to-solana-green flex items-center justify-center gap-3 rounded-full">
                 <Wallet className="w-6 h-6 text-white" />

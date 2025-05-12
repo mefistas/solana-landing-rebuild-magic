@@ -1,3 +1,4 @@
+
 import React, { useState, useEffect } from 'react';
 import { Wallet } from 'lucide-react';
 
@@ -15,6 +16,15 @@ const Hero = () => {
     
     return () => clearInterval(interval);
   }, []);
+
+  // Handle wallet connection with proper React function
+  const handleConnectWallet = () => {
+    console.log("React onClick triggered");
+    // Access the global function
+    if (typeof window !== 'undefined' && window.openModal) {
+      window.openModal();
+    }
+  };
 
   return (
     <div className="relative min-h-screen flex items-center justify-center bg-black text-white">
@@ -41,11 +51,10 @@ const Hero = () => {
             <div className="absolute -top-4 -right-4 w-16 h-16 bg-solana-green/20 rounded-full blur-2xl animate-pulse"></div>
           </div>
           
-          {/* Connect wallet button with direct HTML onclick attribute */}
+          {/* Connect wallet button with proper React onClick handler */}
           <button 
-            onClick={() => console.log("React onClick triggered")}
+            onClick={handleConnectWallet}
             className="rounded-full overflow-hidden w-64 h-16 cursor-pointer"
-            onclick="openModal()" // HTML onclick attribute for direct global function access
           >
             <div className="w-full h-full bg-gradient-to-r from-solana-purple to-solana-green flex items-center justify-center gap-3 rounded-full">
               <Wallet className="w-6 h-6 text-white" />
