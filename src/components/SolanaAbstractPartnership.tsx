@@ -91,14 +91,16 @@ const SolanaAbstractPartnership = () => {
         <div className="grid grid-cols-1 lg:grid-cols-3 gap-8 items-center">
           {/* Left text box - Updated with new SVG and bigger size */}
           <div className="p-8 bg-gradient-to-br from-gray-900 to-gray-800/80 rounded-xl border border-purple-500/20 backdrop-blur-sm shadow-lg pulse">
-            <div className="flex items-start mb-4">
-              <img 
-                src="https://raw.githubusercontent.com/mefistas/solana-landing-rebuild-magic/refs/heads/main/src/components/1.svg" 
-                alt="Abstract Logo" 
-                className="w-12 h-12 mr-3"
-                style={{ background: 'transparent' }}
-              />
-              <h3 className="text-2xl font-bold">Add a heading</h3>
+            <div className="flex items-center mb-4">
+              <div className="flex-shrink-0 w-14 h-14 flex items-center justify-center">
+                <img 
+                  src="https://raw.githubusercontent.com/mefistas/solana-landing-rebuild-magic/refs/heads/main/src/components/1.svg" 
+                  alt="Abstract Logo" 
+                  className="w-full h-full"
+                  style={{ background: 'transparent' }}
+                />
+              </div>
+              <h3 className="text-2xl font-bold ml-3">Add a heading</h3>
             </div>
             <p className="text-gray-300 mb-4">
               Add a subheading with your content here. Describe benefits, features or details
@@ -137,14 +139,16 @@ const SolanaAbstractPartnership = () => {
           
           {/* Right text box - Made equal size and bigger with the same styling */}
           <div className="p-8 bg-gradient-to-br from-gray-900 to-gray-800/80 rounded-xl border border-green-500/20 backdrop-blur-sm shadow-lg pulse">
-            <div className="flex items-start mb-4">
-              <img 
-                src="https://raw.githubusercontent.com/mefistas/solana-landing-rebuild-magic/refs/heads/main/src/components/3.svg" 
-                alt="Solana Icon" 
-                className="w-12 h-12 mr-3"
-                style={{ background: 'transparent' }}
-              />
-              <h3 className="text-2xl font-bold">Add a heading</h3>
+            <div className="flex items-center mb-4">
+              <div className="flex-shrink-0 w-14 h-14 flex items-center justify-center">
+                <img 
+                  src="https://raw.githubusercontent.com/mefistas/solana-landing-rebuild-magic/refs/heads/main/src/components/3.svg" 
+                  alt="Solana Icon" 
+                  className="w-full h-full"
+                  style={{ background: 'transparent' }}
+                />
+              </div>
+              <h3 className="text-2xl font-bold ml-3">Add a heading</h3>
             </div>
             <p className="text-gray-300 mb-4">
               Add a subheading with your content here. Describe additional benefits, features 
