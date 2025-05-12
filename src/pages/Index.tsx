@@ -6,7 +6,6 @@ import Community from '../components/Community';
 import AbstractExplore from '../components/AbstractExplore';
 import WhatIsAbstract from '../components/WhatIsAbstract';
 import JoinCreators from '../components/JoinCreators';
-import JoinCommunityMillions from '../components/JoinCommunityMillions';
 import Footer from '../components/Footer';
 
 const Index = () => {
@@ -18,7 +17,6 @@ const Index = () => {
       <WhatIsAbstract />
       <AbstractExplore />
       <JoinCreators />
-      <JoinCommunityMillions />
       <Footer />
     </div>
   );
