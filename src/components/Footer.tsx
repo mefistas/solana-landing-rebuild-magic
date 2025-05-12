@@ -81,15 +81,13 @@ const Footer = () => {
             © {currentYear} Solabs. All rights reserved.
           </p>
           <div className="flex space-x-6 mt-4 md:mt-0">
-            <a href="https://solana.com/legal/terms" className="text-gray-400 hover:text-white text-sm">
+            <a href="https://solana.com/tos" className="text-gray-400 hover:text-white text-sm">
               Terms
             </a>
-            <a href="https://solana.com/legal/privacy" className="text-gray-400 hover:text-white text-sm">
+            <a href="https://solana.com/tos" className="text-gray-400 hover:text-white text-sm">
               Privacy
             </a>
-            <a href="https://solana.com/legal/cookie" className="text-gray-400 hover:text-white text-sm">
-              Cookies
-            </a>
+         
           </div>
         </div>
       </div>
