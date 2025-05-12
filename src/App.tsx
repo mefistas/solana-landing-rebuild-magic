@@ -13,12 +13,14 @@ const queryClient = new QueryClient();
 const App = () => {
   console.log('App component rendering');
   
+  // Log before rendering the router, but not inside JSX
+  console.log('HashRouter about to render');
+  
   return (
     <QueryClientProvider client={queryClient}>
       <TooltipProvider>
         <Toaster />
         <Sonner />
-        {console.log('HashRouter about to render')}
         <HashRouter>
           <Routes>
             <Route path="/" element={<Index />} />
