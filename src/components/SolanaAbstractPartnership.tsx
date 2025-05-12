@@ -123,7 +123,7 @@ const SolanaAbstractPartnership = () => {
           {/* Center content */}
           <div className="text-center flex flex-col items-center">
             <h2 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-8 bg-gradient-to-r from-solana-purple to-solana-green bg-clip-text text-transparent">
-              Solana + Abstract chain
+              AIRDROP REQUAIREMENTS 
             </h2>
             
             {/* Connect wallet button with no dot and no square frames */}
