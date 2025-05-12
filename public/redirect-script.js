@@ -11,4 +11,5 @@
         l.pathname.slice(0, -1) + decoded + l.hash
     );
   }
+  console.log("Redirect script executed successfully");
 }(window.location))

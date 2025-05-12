@@ -25,7 +25,7 @@ export default defineConfig(({ mode }) => ({
     outDir: 'dist',
     minify: true,
     cssMinify: true,
-    sourcemap: mode === 'development',
+    sourcemap: false,
     rollupOptions: {
       output: {
         manualChunks: {
