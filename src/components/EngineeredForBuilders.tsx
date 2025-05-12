@@ -31,12 +31,12 @@ const EngineeredForBuilders = () => {
           Discover the Abstract Portal - your gateway to onchain discovery.
         </p>
         
-        <Button
+        <button
           onClick={() => window.open("https://docs.abs.xyz/overview", "_blank")}
-          className="rounded-full bg-gradient-to-r from-green-500 to-emerald-600 hover:opacity-90 border-0"
+          className="px-8 py-3 text-white font-medium rounded-full bg-gradient-to-r from-green-500 to-emerald-600 hover:opacity-90 transition-opacity"
         >
           Explore ecosystem
-        </Button>
+        </button>
       </div>
       
       {/* Add keyframes for animations */}
