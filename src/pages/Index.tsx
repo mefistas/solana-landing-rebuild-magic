@@ -3,7 +3,6 @@ import React from 'react';
 import Navbar from '../components/Navbar';
 import Hero from '../components/Hero';
 import Community from '../components/Community';
-import AbstractExplore from '../components/AbstractExplore';
 import WhatIsAbstract from '../components/WhatIsAbstract';
 import Footer from '../components/Footer';
 import CommunityStats from '../components/CommunityStats';
@@ -18,7 +17,6 @@ const Index = () => {
       <CommunityStats />
       <Community />
       <EngineeredForBuilders />
-      <AbstractExplore />
       <Footer />
     </div>
   );
