@@ -89,10 +89,9 @@ Content Creators</h2>
               Solana Collective provides opportunities and initiatives to empower and uplift Content Creators and Projects in the Solana Ecosystem.
             </p>
             <div className="flex flex-wrap gap-4">
-              <div className="relative overflow-hidden group inline-block">
-                <div className="absolute inset-0 bg-gradient-to-r from-solana-purple to-solana-green rounded-full blur-md group-hover:blur-xl transition-all duration-300"></div>
+              <div className="relative inline-block">
                 <a href="https://solana.com/ecosystem" target="_blank" rel="noopener noreferrer">
-                  <button className="relative z-10 px-6 py-3 bg-black text-white rounded-full border border-white/20 font-medium group-hover:shadow-lg group-hover:shadow-solana-purple/20">
+                  <button className="rounded-full px-6 py-3 bg-gradient-to-r from-solana-purple to-solana-green text-white font-medium hover:opacity-90 transition-all duration-300">
                     Explore ecosystem
                   </button>
                 </a>

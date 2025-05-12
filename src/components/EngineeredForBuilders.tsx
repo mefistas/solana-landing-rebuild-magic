@@ -30,10 +30,10 @@ const EngineeredForBuilders = () => {
           Discover the Abstract Portal - your gateway to onchain discovery.
         </p>
         
-        {/* Fully rounded button with green glow effect - no square frames */}
+        {/* Empty button with green neon frame */}
         <button 
           onClick={() => window.open("https://docs.abs.xyz/overview", "_blank")}
-          className="rounded-full px-8 py-3 bg-gradient-to-r from-green-500 to-emerald-600 text-white font-medium transition duration-200 hover:opacity-90"
+          className="rounded-full px-8 py-3 border-2 border-emerald-500 text-white font-medium transition duration-200 hover:opacity-90 shadow-[0_0_15px_rgba(20,241,149,0.5)] bg-transparent"
         >
           Dev Docs
         </button>
