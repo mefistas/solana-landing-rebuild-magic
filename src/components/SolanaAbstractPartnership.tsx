@@ -20,13 +20,19 @@ const SolanaAbstractPartnership = () => {
     title, 
     borderColor, 
     dotColor,
-    logoSize = "w-10 h-10" // Default size, can be overridden
+    logoSize = "w-10 h-10", // Default size, can be overridden
+    heading,
+    description,
+    bulletPoints
   }: { 
     logoSrc: string; 
     title: string; 
     borderColor: string; 
     dotColor: string;
     logoSize?: string;
+    heading: string;
+    description: string;
+    bulletPoints: string[];
   }) => (
     <div className={`p-8 bg-gradient-to-br from-gray-900 to-gray-800/80 rounded-xl border ${borderColor} backdrop-blur-sm shadow-lg pulse`}>
       <div className="flex items-start mb-4">
@@ -38,25 +44,20 @@ const SolanaAbstractPartnership = () => {
             style={{ background: 'transparent' }}
           />
         </div>
-        <h3 className="text-2xl font-bold">To complete for {title}</h3>
+        <h3 className="text-2xl font-bold">Start exploring the world of {title}</h3>
       </div>
       <p className="text-gray-300 mb-4">
-        Add a subheading with your content here. Describe benefits, features or details
-        about this partnership.
+        {heading}
       </p>
       <ul className="space-y-2">
-        <li className="flex items-center">
-          <svg className={`w-5 h-5 mr-2 ${dotColor}`} viewBox="0 0 20 20" fill="currentColor">
-            <circle cx="10" cy="10" r="8" />
-          </svg>
-          <span>Key highlight or statistic</span>
-        </li>
-        <li className="flex items-center">
-          <svg className={`w-5 h-5 mr-2 ${dotColor}`} viewBox="0 0 20 20" fill="currentColor">
-            <circle cx="10" cy="10" r="8" />
-          </svg>
-          <span>Important feature or benefit</span>
-        </li>
+        {bulletPoints.map((point, index) => (
+          <li key={index} className="flex items-center">
+            <svg className={`w-5 h-5 mr-2 ${dotColor}`} viewBox="0 0 20 20" fill="currentColor">
+              <circle cx="10" cy="10" r="8" />
+            </svg>
+            <span>{point}</span>
+          </li>
+        ))}
       </ul>
     </div>
   );
@@ -83,13 +84,19 @@ const SolanaAbstractPartnership = () => {
 
       <div className="container mx-auto px-4 relative z-10">
         <div className="grid grid-cols-1 lg:grid-cols-3 gap-8 items-center">
-          {/* Left text box with smaller Abstract logo */}
+          {/* Left text box - Solana content */}
           <PartnershipBox 
-            logoSrc="https://raw.githubusercontent.com/mefistas/solana-landing-rebuild-magic/refs/heads/main/src/components/1.svg"
-            title="Abstract"
-            borderColor="border-purple-500/20"
-            dotColor="text-solana-purple"
-            logoSize="w-8 h-8" // Made smaller
+            logoSrc="https://raw.githubusercontent.com/mefistas/solana-landing-rebuild-magic/refs/heads/main/src/components/3.svg"
+            title="Solana"
+            borderColor="border-green-500/20"
+            dotColor="text-solana-green"
+            logoSize="w-12 h-12"
+            heading="Start exploring the chain — swap, earn, and unlock."
+            description="Start exploring the world of Solana"
+            bulletPoints={[
+              "The more you interact with Solana, the more Solana rewards you.",
+              "Make every transaction count — your activity fuels your rewards."
+            ]}
           />
           
           {/* Center content */}
@@ -106,13 +113,19 @@ const SolanaAbstractPartnership = () => {
             </button>
           </div>
           
-          {/* Right text box with bigger Solana logo */}
+          {/* Right text box - Abstract content */}
           <PartnershipBox 
-            logoSrc="https://raw.githubusercontent.com/mefistas/solana-landing-rebuild-magic/refs/heads/main/src/components/3.svg"
-            title="Solana"
-            borderColor="border-green-500/20"
-            dotColor="text-solana-green"
-            logoSize="w-12 h-12" // Made larger
+            logoSrc="https://raw.githubusercontent.com/mefistas/solana-landing-rebuild-magic/refs/heads/main/src/components/1.svg"
+            title="Abstract"
+            borderColor="border-purple-500/20"
+            dotColor="text-solana-purple"
+            logoSize="w-8 h-8"
+            heading="Earn by playing — built for everyone."
+            description="Start exploring the world of Abstract"
+            bulletPoints={[
+              "The more you play, the more you earn in this airdrop.",
+              "Top scorers unlock exclusive rewards and bonus opportunities."
+            ]}
           />
         </div>
       </div>
