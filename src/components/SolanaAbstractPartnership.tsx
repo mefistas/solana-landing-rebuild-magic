@@ -9,38 +9,56 @@ const SolanaAbstractPartnership = () => {
       
       {/* Floating SVG elements */}
       <div className="absolute inset-0 z-0 overflow-hidden">
-        {/* Purple cube SVGs - left side */}
+        {/* Purple cube SVGs - left side - replaced with 20.svg */}
         <div className="absolute left-[5%] top-[15%]">
-          <svg width="60" height="60" viewBox="0 0 60 60" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <rect width="50" height="50" rx="4" fill="#8E59FF" fillOpacity="0.7" />
-          </svg>
+          <img 
+            src="/src/components/20.svg" 
+            alt="Purple Element" 
+            className="w-[60px] h-[60px]" 
+            style={{ background: 'transparent' }}
+          />
         </div>
         <div className="absolute left-[15%] top-[50%]">
-          <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <rect width="32" height="32" rx="2" fill="#8E59FF" fillOpacity="0.5" />
-          </svg>
+          <img 
+            src="/src/components/20.svg" 
+            alt="Purple Element" 
+            className="w-[40px] h-[40px]" 
+            style={{ background: 'transparent' }}
+          />
         </div>
         <div className="absolute left-[8%] bottom-[20%]">
-          <svg width="80" height="80" viewBox="0 0 80 80" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <rect width="65" height="65" rx="4" fill="#8E59FF" fillOpacity="0.6" />
-          </svg>
+          <img 
+            src="/src/components/20.svg" 
+            alt="Purple Element" 
+            className="w-[80px] h-[80px]" 
+            style={{ background: 'transparent' }}
+          />
         </div>
         
-        {/* Green cube SVGs - right side */}
+        {/* Green cube SVGs - right side - replaced with 17.svg */}
         <div className="absolute right-[5%] top-[20%]">
-          <svg width="60" height="60" viewBox="0 0 60 60" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <rect width="50" height="50" rx="4" fill="#14F195" fillOpacity="0.7" />
-          </svg>
+          <img 
+            src="/src/components/17.svg" 
+            alt="Green Element" 
+            className="w-[60px] h-[60px]" 
+            style={{ background: 'transparent' }}
+          />
         </div>
         <div className="absolute right-[20%] bottom-[15%]">
-          <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <rect width="32" height="32" rx="2" fill="#14F195" fillOpacity="0.5" />
-          </svg>
+          <img 
+            src="/src/components/17.svg" 
+            alt="Green Element" 
+            className="w-[40px] h-[40px]" 
+            style={{ background: 'transparent' }}
+          />
         </div>
         <div className="absolute right-[10%] top-[50%]">
-          <svg width="70" height="70" viewBox="0 0 70 70" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <rect width="55" height="55" rx="4" fill="#14F195" fillOpacity="0.6" />
-          </svg>
+          <img 
+            src="/src/components/17.svg" 
+            alt="Green Element" 
+            className="w-[70px] h-[70px]" 
+            style={{ background: 'transparent' }}
+          />
         </div>
 
         {/* Chrome figurine SVGs */}
@@ -77,7 +95,7 @@ const SolanaAbstractPartnership = () => {
               <img 
                 src="https://raw.githubusercontent.com/mefistas/solana-landing-rebuild-magic/refs/heads/main/src/components/1.svg" 
                 alt="Abstract Logo" 
-                className="w-10 h-10 mr-3"
+                className="w-12 h-12 mr-3"
                 style={{ background: 'transparent' }}
               />
               <h3 className="text-2xl font-bold">Add a heading</h3>
@@ -123,7 +141,7 @@ const SolanaAbstractPartnership = () => {
               <img 
                 src="https://raw.githubusercontent.com/mefistas/solana-landing-rebuild-magic/refs/heads/main/src/components/3.svg" 
                 alt="Solana Icon" 
-                className="w-10 h-10 mr-3"
+                className="w-12 h-12 mr-3"
                 style={{ background: 'transparent' }}
               />
               <h3 className="text-2xl font-bold">Add a heading</h3>
