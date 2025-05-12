@@ -102,7 +102,7 @@ const SolanaAbstractPartnership = () => {
           {/* Center content */}
           <div className="text-center flex flex-col items-center">
             <h2 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-8 bg-gradient-to-r from-solana-purple to-solana-green bg-clip-text text-transparent">
-              MASSIVE DROP
+              DUAL PUSH
             </h2>
             
             <button
