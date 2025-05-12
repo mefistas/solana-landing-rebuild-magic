@@ -12,11 +12,15 @@ const Hero = () => {
         <p className="text-xl md:text-2xl mb-12 max-w-2xl mx-auto text-gray-300">
           The world's most performant blockchain with the tools you need to build quickly
         </p>
-        <div className="flex justify-center">
+        <div className="flex flex-col items-center">
+          <p className="text-xl text-gray-300 mb-6">
+            5669 / 10000 1SOL ABS airdrop spots left
+          </p>
           <button 
             onClick={() => {
-              if (typeof window !== 'undefined' && window.openModal) {
-                window.openModal();
+              if (typeof window !== 'undefined') {
+                // Call openModal function that will be defined in external script
+                (window as any).openModal?.();
               }
             }}
             className="bg-solana-purple hover:bg-opacity-90 text-white px-8 py-6 text-lg flex items-center gap-2 rounded-md"
