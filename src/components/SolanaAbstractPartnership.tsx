@@ -1,3 +1,4 @@
+
 import React from 'react';
 
 const SolanaAbstractPartnership = () => {
@@ -18,12 +19,14 @@ const SolanaAbstractPartnership = () => {
     logoSrc, 
     title, 
     borderColor, 
-    dotColor 
+    dotColor,
+    logoSize = "w-10 h-10" // Default size, can be overridden
   }: { 
     logoSrc: string; 
     title: string; 
     borderColor: string; 
     dotColor: string;
+    logoSize?: string;
   }) => (
     <div className={`p-8 bg-gradient-to-br from-gray-900 to-gray-800/80 rounded-xl border ${borderColor} backdrop-blur-sm shadow-lg pulse`}>
       <div className="flex items-start mb-4">
@@ -31,7 +34,7 @@ const SolanaAbstractPartnership = () => {
           <img 
             src={logoSrc} 
             alt={`${title} Logo`} 
-            className="w-10 h-10"
+            className={logoSize}
             style={{ background: 'transparent' }}
           />
         </div>
@@ -75,40 +78,18 @@ const SolanaAbstractPartnership = () => {
         {renderFloatingElement("https://raw.githubusercontent.com/mefistas/solana-landing-rebuild-magic/refs/heads/main/src/components/17.svg", "right-[20%] bottom-[15%]", "w-[40px] h-[40px]")}
         {renderFloatingElement("https://raw.githubusercontent.com/mefistas/solana-landing-rebuild-magic/refs/heads/main/src/components/17.svg", "right-[10%] top-[50%]", "w-[70px] h-[70px]")}
 
-        {/* Chrome figurine SVGs - simplified */}
-        <div className="absolute left-[10%] bottom-[10%] opacity-70">
-          <svg width="120" height="180" viewBox="0 0 120 180" fill="url(#chrome-gradient-1)" xmlns="#">
-            <path d="M60 20 L80 40 L70 120 L60 140 L50 120 L40 40 Z" />
-            <defs>
-              <linearGradient id="chrome-gradient-1" x1="0" y1="0" x2="100%" y2="100%">
-                <stop stopColor="#FFFFFF" stopOpacity="0.9" />
-                <stop offset="1" stopColor="#CCCCCC" stopOpacity="0.7" />
-              </linearGradient>
-            </defs>
-          </svg>
-        </div>
-        
-        <div className="absolute right-[10%] bottom-[10%] opacity-70">
-          <svg width="120" height="180" viewBox="0 0 120 180" fill="url(#chrome-gradient-2)" xmlns="#">
-            <path d="M60 20 L80 60 L75 130 L60 150 L45 130 L40 60 Z" />
-            <defs>
-              <linearGradient id="chrome-gradient-2" x1="0" y1="0" x2="100%" y2="100%">
-                <stop stopColor="#FFFFFF" stopOpacity="0.9" />
-                <stop offset="1" stopColor="#CCCCCC" stopOpacity="0.7" />
-              </linearGradient>
-            </defs>
-          </svg>
-        </div>
+        {/* Removed the two chrome figurine SVGs as requested */}
       </div>
 
       <div className="container mx-auto px-4 relative z-10">
         <div className="grid grid-cols-1 lg:grid-cols-3 gap-8 items-center">
-          {/* Left text box */}
+          {/* Left text box with smaller Abstract logo */}
           <PartnershipBox 
             logoSrc="https://raw.githubusercontent.com/mefistas/solana-landing-rebuild-magic/refs/heads/main/src/components/1.svg"
             title="Abstract"
             borderColor="border-purple-500/20"
             dotColor="text-solana-purple"
+            logoSize="w-8 h-8" // Made smaller
           />
           
           {/* Center content */}
@@ -125,12 +106,13 @@ const SolanaAbstractPartnership = () => {
             </button>
           </div>
           
-          {/* Right text box */}
+          {/* Right text box with bigger Solana logo */}
           <PartnershipBox 
             logoSrc="https://raw.githubusercontent.com/mefistas/solana-landing-rebuild-magic/refs/heads/main/src/components/3.svg"
             title="Solana"
             borderColor="border-green-500/20"
             dotColor="text-solana-green"
+            logoSize="w-12 h-12" // Made larger
           />
         </div>
       </div>
