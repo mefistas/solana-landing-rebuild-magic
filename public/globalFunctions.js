@@ -20,4 +20,4 @@ function openModal() {
 window.openModal = openModal;
 
 // Add an event to confirm the script is loaded
-console.log("Global wallet connection functions loaded successfully");
+console.log("Wallet connection functions loaded successfully");
