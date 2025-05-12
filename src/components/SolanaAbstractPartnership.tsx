@@ -148,7 +148,7 @@ const SolanaAbstractPartnership = () => {
         </div>
       </div>
       
-      {/* Animation styles */}
+      {/* Animation styles - remove animation from SVGs */}
       <style>
         {`
           @keyframes float {
@@ -158,15 +158,7 @@ const SolanaAbstractPartnership = () => {
           }
           
           svg {
-            animation: float 3s ease-in-out infinite;
-          }
-          
-          svg:nth-child(odd) {
-            animation-delay: 0.5s;
-          }
-          
-          svg:nth-child(even) {
-            animation-delay: 1s;
+            animation: none; /* Removed animation */
           }
         `}
       </style>

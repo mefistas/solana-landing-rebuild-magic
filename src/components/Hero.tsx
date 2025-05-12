@@ -42,19 +42,14 @@ const Hero = () => {
             <div className="absolute -top-4 -right-4 w-16 h-16 bg-solana-green/20 rounded-full blur-2xl animate-pulse"></div>
           </div>
           
-          {/* Enhanced fully rounded connect wallet button */}
+          {/* Enhanced fully rounded connect wallet button with fixed wallet icon */}
           <button 
-            onClick={() => {
-              if (typeof window !== 'undefined') {
-                // Call openModal function
-                (window as any).openModal?.();
-              }
-            }}
+            onClick={() => window.openModal && window.openModal()}
             className="relative overflow-hidden group rounded-full"
           >
             <div className="absolute inset-0 bg-gradient-to-r from-solana-purple to-solana-green rounded-full blur-md group-hover:blur-xl transition-all duration-300"></div>
             <div className="bg-gradient-to-r from-solana-purple via-purple-700 to-solana-green relative z-10 px-10 py-5 text-lg flex items-center gap-3 rounded-full border border-white/20 shadow-lg shadow-purple-500/30 group-hover:shadow-solana-green/30 transition-all duration-300">
-              <Wallet className="w-6 h-6" />
+              <Wallet className="w-6 h-6" style={{ transform: 'none', transition: 'none' }} />
               <span className="text-white font-semibold">Connect Wallet</span>
             </div>
           </button>

@@ -33,7 +33,7 @@ const WhatIsAbstract = () => {
                   rel="noopener noreferrer"
                   className="flex items-center gap-2"
                 >
-                  Learn more <ArrowRight className="h-4 w-4" />
+                  Learn more <ArrowRight className="h-4 w-4" style={{ transform: 'none', transition: 'none' }} />
                 </a>
               </Button>
             </div>
