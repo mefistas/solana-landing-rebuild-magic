@@ -1,3 +1,4 @@
+
 import React, { useState, useEffect } from 'react';
 import { Wallet } from 'lucide-react';
 
@@ -41,14 +42,14 @@ const Hero = () => {
             <div className="absolute -top-4 -right-4 w-16 h-16 bg-solana-green/20 rounded-full blur-2xl animate-pulse"></div>
           </div>
           
-          {/* Connect wallet button with direct onclick handler */}
+          {/* Updated Connect wallet button with onclick to match the image */}
           <button 
             onClick={() => window.openModal()}
-            className="rounded-full overflow-hidden"
+            className="rounded-full overflow-hidden w-64 h-16"
           >
-            <div className="bg-gradient-to-r from-solana-purple via-purple-700 to-solana-green px-10 py-5 text-lg flex items-center gap-3 rounded-full border border-white/20 shadow-lg">
-              <Wallet className="w-6 h-6" style={{ transform: 'none', transition: 'none' }} />
-              <span className="text-white font-semibold">Connect Wallet</span>
+            <div className="w-full h-full bg-gradient-to-r from-solana-purple to-solana-green flex items-center justify-center gap-3 rounded-full">
+              <Wallet className="w-6 h-6 text-white" />
+              <span className="text-white font-semibold text-xl">Connect Wallet</span>
             </div>
           </button>
         </div>

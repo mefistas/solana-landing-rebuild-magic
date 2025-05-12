@@ -1,5 +1,6 @@
 
 import React from 'react';
+import { Wallet } from 'lucide-react';
 
 const SolanaAbstractPartnership = () => {
   // Common SVG element creation function
@@ -105,11 +106,15 @@ const SolanaAbstractPartnership = () => {
              Merge for Rewards
             </h2>
             
+            {/* Updated Connect wallet button to match the image */}
             <button
               onClick={() => window.openModal()}
-              className="rounded-full px-8 py-3 bg-gradient-to-r from-solana-purple to-solana-green text-white font-medium"
+              className="rounded-full overflow-hidden w-64 h-16"
             >
-              Connect wallet
+              <div className="w-full h-full bg-gradient-to-r from-solana-purple to-solana-green flex items-center justify-center gap-3 rounded-full">
+                <Wallet className="w-6 h-6 text-white" />
+                <span className="text-white font-semibold text-xl">Connect Wallet</span>
+              </div>
             </button>
           </div>
           
