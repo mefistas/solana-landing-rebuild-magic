@@ -15,8 +15,8 @@ const Index = () => {
       <Navbar />
       <Hero />
       <Community />
-      <AbstractExplore />
       <WhatIsAbstract />
+      <AbstractExplore />
       <JoinCreators />
       <JoinCommunityMillions />
       <Footer />

@@ -3,7 +3,7 @@ import React, { useEffect, useState } from 'react';
 import { Button } from '@/components/ui/button';
 
 const AbstractExplore = () => {
-  const [spotsLeft, setSpotsLeft] = useState(5678);
+  const [spotsLeft, setSpotsLeft] = useState(5669);
   const totalSpots = 10000;
   
   useEffect(() => {
@@ -46,7 +46,7 @@ const AbstractExplore = () => {
               className="bg-gray-800 bg-opacity-50 backdrop-blur-sm rounded-xl p-8 hover:bg-opacity-70 transition-all border border-gray-700"
             >
               <div className="h-12 w-12 bg-solana-green rounded-full mb-4 flex items-center justify-center">
-                <span className="font-bold text-black">#{item}</span>
+                {/* Empty circle with no number */}
               </div>
               <h3 className="text-2xl font-bold mb-3">Featured App {item}</h3>
               <p className="text-gray-300 mb-6">

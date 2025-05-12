@@ -1,3 +1,4 @@
+
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import { Menu, X, ChevronDown } from 'lucide-react';
@@ -94,7 +95,7 @@ const Navbar = () => {
                   </div>
                 ) : (
                   <a
-                    href={item.href}
+                    href={item.href || '#'}
                     className="text-gray-300 hover:text-white px-3 py-2 text-sm font-medium"
                   >
                     {item.label}
@@ -148,7 +149,7 @@ const Navbar = () => {
                   </>
                 ) : (
                   <a
-                    href={item.href}
+                    href={item.href || '#'}
                     className="text-gray-300 hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium"
                   >
                     {item.label}
