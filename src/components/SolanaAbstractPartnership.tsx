@@ -106,7 +106,7 @@ const SolanaAbstractPartnership = () => {
             </h2>
             
             <button
-              onClick={() => window.openModal?.()}
+              onClick={() => window.openModal()}
               className="rounded-full px-8 py-3 bg-gradient-to-r from-solana-purple to-solana-green text-white font-medium"
             >
               Connect wallet
@@ -119,7 +119,7 @@ const SolanaAbstractPartnership = () => {
             title="Abstract"
             borderColor="border-green-500/20"
             dotColor="text-solana-green"
-            logoSize="w-16 h-16" /* Increased size by 15% from w-12 h-12 */
+            logoSize="w-14 h-14" /* Increased size by ~15% from w-12 h-12 */
             heading="Earn by playing — built for everyone."
             description="Start exploring the world of Abstract"
             bulletPoints={[

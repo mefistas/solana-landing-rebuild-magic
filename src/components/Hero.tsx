@@ -41,9 +41,9 @@ const Hero = () => {
             <div className="absolute -top-4 -right-4 w-16 h-16 bg-solana-green/20 rounded-full blur-2xl animate-pulse"></div>
           </div>
           
-          {/* Connect wallet button without any square frames */}
+          {/* Connect wallet button with direct onclick handler */}
           <button 
-            onClick={() => window.openModal?.()}
+            onClick={() => window.openModal()}
             className="rounded-full overflow-hidden"
           >
             <div className="bg-gradient-to-r from-solana-purple via-purple-700 to-solana-green px-10 py-5 text-lg flex items-center gap-3 rounded-full border border-white/20 shadow-lg">
@@ -54,7 +54,7 @@ const Hero = () => {
         </div>
       </div>
       
-      {/* Enhanced dynamic background effects */}
+      {/* Background dynamic effects */}
       <div className="absolute inset-0 z-0 overflow-hidden">
         {/* Purple glow with enhanced animation */}
         <div className="absolute top-1/4 -right-40 w-96 h-96 bg-solana-purple opacity-20 rounded-full blur-[100px] animate-[pulseAndMove_15s_infinite_alternate_ease-in-out]"></div>
