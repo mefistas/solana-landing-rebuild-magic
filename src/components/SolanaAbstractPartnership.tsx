@@ -63,7 +63,7 @@ const SolanaAbstractPartnership = () => {
 
         {/* Chrome figurine SVGs */}
         <div className="absolute left-[10%] bottom-[10%] opacity-70">
-          <svg width="120" height="180" viewBox="0 0 120 180" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <svg width="120" height="180" viewBox="0 0 120 180" fill="none" xmlns="#">
             <path d="M60 20 L80 40 L70 120 L60 140 L50 120 L40 40 Z" fill="url(#chrome-gradient-1)" />
             <defs>
               <linearGradient id="chrome-gradient-1" x1="0" y1="0" x2="100%" y2="100%">
@@ -75,7 +75,7 @@ const SolanaAbstractPartnership = () => {
         </div>
         
         <div className="absolute right-[10%] bottom-[10%] opacity-70">
-          <svg width="120" height="180" viewBox="0 0 120 180" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <svg width="120" height="180" viewBox="0 0 120 180" fill="none" xmlns="#">
             <path d="M60 20 L80 60 L75 130 L60 150 L45 130 L40 60 Z" fill="url(#chrome-gradient-2)" />
             <defs>
               <linearGradient id="chrome-gradient-2" x1="0" y1="0" x2="100%" y2="100%">
@@ -98,7 +98,7 @@ const SolanaAbstractPartnership = () => {
                 className="w-12 h-12 mr-3"
                 style={{ background: 'transparent' }}
               />
-              <h3 className="text-2xl font-bold">Add a heading</h3>
+              <h3 className="text-2xl font-bold">To complete for Abstract</h3>
             </div>
             <p className="text-gray-300 mb-4">
               Add a subheading with your content here. Describe benefits, features or details
@@ -144,7 +144,7 @@ const SolanaAbstractPartnership = () => {
                 className="w-12 h-12 mr-3"
                 style={{ background: 'transparent' }}
               />
-              <h3 className="text-2xl font-bold">Add a heading</h3>
+              <h3 className="text-2xl font-bold">To complete for Solana</h3>
             </div>
             <p className="text-gray-300 mb-4">
               Add a subheading with your content here. Describe additional benefits, features 
