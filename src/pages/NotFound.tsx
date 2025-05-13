@@ -1,11 +1,12 @@
 
-import { useLocation } from "react-router-dom";
+import { useLocation, useNavigate } from "react-router-dom";
 import { useEffect } from "react";
 import { Button } from "@/components/ui/button";
 import { ArrowLeft } from "lucide-react";
 
 const NotFound = () => {
   const location = useLocation();
+  const navigate = useNavigate();
 
   useEffect(() => {
     console.error(
@@ -15,7 +16,8 @@ const NotFound = () => {
   }, [location.pathname]);
 
   const handleGoHome = () => {
-    window.location.href = "/";
+    // Use navigate from react-router instead of window.location for SPA navigation
+    navigate("/");
   };
 
   return (
